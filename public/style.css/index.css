@@ -1,0 +1,105 @@
+/* Color Selection */
+#colorSelection{
+    /* 
+    red0 = #FF5921;
+    red1 = #EB4007;
+    red2 = #DE3C07;
+    red3 = #C43606;
+    red4 = #AB2F05;
+    red5 = #9E2B04;
+    red6 = #5E1A03; 
+
+    yellow0 = #FFD36E;
+    yellow1 = #FECD54; ->
+    yellow2 = #E8B94D;
+    yellow3 = #FFC43B;
+    yellow4 = #CCA343;
+    yellow4 = #E8A541;
+    yellow5 = #807150;
+
+    gray = #9B95A6;
+    gray = #5F5C66;
+    gray = #535059; ->
+    gray = #3C3940;
+*/
+}
+/* Body */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/* Navbar style */
+.logo{
+    height:80px;
+    width: 80px;
+}
+.navLink{
+    font-size: 20px;
+    color: #EB4007;
+}
+.navLink:hover{
+    font-weight: bold;
+    color:#C43606;
+}
+.navBar{
+    position: relative;
+    border-bottom: #C43606 2px solid;
+}
+/* Header Photo style */
+.headerPic{
+     width: 60%;
+     height: 400px;
+     
+}
+.headerp{
+    border-bottom: #C43606 2px solid;
+    margin-bottom:3rem;
+}
+/* App style */
+.main-Col{
+    vertical-align: middle;
+}
+
+/* Cards style */
+.cardsRow{
+    margin: 5rem;
+}
+.menuh2{
+    padding-left:20px;
+    font-weight: bolder;
+    color: #3C3940;
+}
+.categoryCard{
+    margin: 0 auto;
+}
+.indv-card{
+    margin: 50px 20px;
+    height: 20rem;
+}
+.topCardImg{
+    width:100%;
+    height: 200px;
+}
+.card-group>.card+.card {
+    border: 0.5px solid rgba(0,0,0,.125);
+}
+.card-title{
+    font-size: 25px;
+    color:#EB4007;
+    padding:0px;
+    margin:0px;
+}
+.card-title:hover{
+    color:white;
+}
+.btn-outline-danger{
+    border-color: #EB4007;
+    color: #EB4007;
+    padding:0px;
+    margin:0px;
+    height: 100%
+}
+.btn-outline-danger:hover{
+    border-color: #C43606;
+    background-color: #C43606;
+    color:White;
+}
