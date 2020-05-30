@@ -13,7 +13,7 @@ function Menu() {
       <h1>Menu</h1>
       <FoodGrid>
         {foodItems.map(food => (
-          <Food img={food.img} />
+          <Food img={food.img}> {food.name} </Food>
         ))}
       </FoodGrid>
     </MenuStyled>
