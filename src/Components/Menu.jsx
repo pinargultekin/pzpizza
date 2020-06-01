@@ -4,23 +4,20 @@ import {Card, CardGroup,Row, Col} from "react-bootstrap"
 
 
 function Menu(props){
-    return <Row>
-    <Col xs={9} className="categoryCard">
-        <h2 className="menuh2">MENU</h2>
-        <CardGroup  className="cardGroupRow">
-  <MenuCards 
-  title= {props.title1}
-  img= {props.img1}/>
-  <MenuCards 
+    return   <MenuCards 
+  title= {props.title}
+  img= {props.img}/>
+   {/* <CardGroup  className="cardGroupRow"> */}
+  {/* <MenuCards 
   title= {props.title2}
   img = {props.img2}/>
   <MenuCards 
   title= {props.title3}
-  img = {props.img3}/>
-  </CardGroup>
-  </Col>
+  img = {props.img3}/> */}
+  {/* </CardGroup> */}
+  
 
-  <Col xs={9} className="categoryCard">
+  {/* <Col xs={9} className="categoryCard">
   <CardGroup  className="cardGroupRow">
   <MenuCards 
   title= {props.title4}
@@ -33,8 +30,8 @@ function Menu(props){
   img = {props.img6}/>
  
 </CardGroup>
-    </Col>
-    </Row>
+    </Col> */}
+    
 }
 
 export default Menu;
