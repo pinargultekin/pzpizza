@@ -31,7 +31,7 @@ body{
 .logo{
     height:80px;
     width: 80px;
-    margin-left: 18rem;
+    /* margin-left: 18rem; */
 }
 .navLink{
     font-size: 20px;
@@ -47,6 +47,14 @@ body{
     z-index: 999;
     background-color: #3C3940;
     border-bottom: #C43606 2px solid;
+    display: flex;
+    flex:1;
+    flex-direction: row; 
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.navbar-brand{
+    margin-left: 20%;
 }
 .justify-content-end{
     margin-right: 19%
@@ -73,40 +81,27 @@ body{
     margin: 5rem;
 }
 .menuh2{
-    padding-left:20px;
+    padding-left: 15%;
     font-weight: bolder;
     color: #3C3940;
 }
 .categoryCard{
-    margin: 0 auto; 
+   margin: 0 auto; 
    display: flex;
    flex:1;
    flex-direction: row; 
-   justify-content: space-around;
-    /* position: relative;
-    display: inline-block; */
-    
-    /* display:flex;
-    flex-direction: column;
-    justify-content: space-between;  */
+   justify-content: space-between;
+   flex-wrap: wrap;
 }
 .indv-card{
     margin: 50px 20px;
     height: 20rem;
     width: 18rem;
-    flex-grow: 5;
 }
 .topCardImg{
     width:100%;
     height: 200px;
 }
-/* .card-group{
-    width: 18rem;
-    
-} */
-/* .card-group>.card+.card {
-    border: 0.5px solid rgba(0,0,0,.125);
-} */
 .card-title{
     font-size: 25px;
     color:#EB4007;

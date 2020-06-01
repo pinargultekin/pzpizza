@@ -16,8 +16,8 @@ function App (){
     return <div className="main-cont">
         <Navigation />
         <HeaderPhoto/>
-        <Col className="categoryCard">
         <h2 className="menuh2">MENU</h2>
+        <Col xs={9} className="categoryCard">      
         {menu.map(CreateCard)}
         </Col>
         {/* // title1={pizza[0].itemName}
