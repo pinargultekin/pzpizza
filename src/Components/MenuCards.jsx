@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, CardGroup, Button} from "react-bootstrap";
+import {Card, Button} from "react-bootstrap";
 
 function MenuCards(props) {
     return <Card  className="indv-card">
