@@ -1,6 +1,6 @@
 import React from "react";
 
 function Logo(){
-    return <img className="logo" src="../../images/alterlogo.png"/>
+    return <img className="logo" alt = "Logo" src="../../images/alterlogo.png"/>
 }
 export default Logo;

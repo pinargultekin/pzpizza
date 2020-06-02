@@ -3,12 +3,13 @@ import Navigation from "./Nav";
 import HeaderPhoto from "./HeaderPhoto";
 import Menu from "./Menu";
 import menu from "../menu";
-import {Card, CardGroup,Row, Col} from "react-bootstrap"
+import {Col} from "react-bootstrap"
 // import {pasta, salad, sides, dessert, drink} from "../menu";
 // console.log(pizza.itemName)
 
 function CreateCard (menu) {
     return <Menu 
+    key = {menu.id}
     title = {menu.itemName}
     img = {menu.itemImg}/>
 }
