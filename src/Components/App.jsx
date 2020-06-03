@@ -1,8 +1,8 @@
 import React from "react";
-import Navigation from "./Nav";
-import HeaderPhoto from "./HeaderPhoto";
-import Menu from "./Menu";
-import menu from "../menu";
+import Navigation from "./Navbar/Nav";
+import HeaderPhoto from "./Promophotos/HeaderPhoto";
+import Menu from "./Menu/Menu";
+import menu from "../Menudata/menu";
 import {Col} from "react-bootstrap"
 // import {pasta, salad, sides, dessert, drink} from "../menu";
 // console.log(pizza.itemName)

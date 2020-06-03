@@ -4,7 +4,7 @@ import {FiShoppingCart} from 'react-icons/fi';
 import {BsFillPersonFill} from 'react-icons/bs';
 import {MdRestaurantMenu} from 'react-icons/md';
 import ReactToolTip from "react-tooltip";
-import Logo from "./Logo";
+import Logo from "../Navbar/Logo";
 function Navigation() {
     return <Row>
         <Col xs={5}>
