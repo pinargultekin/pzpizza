@@ -1,39 +1,43 @@
-import React from "react";
-import Navigation from "./Navbar/Nav";
-import HeaderPhoto from "./Promophotos/HeaderPhoto";
-import Menu from "./Menu/Menu";
-import menu from "../Menudata/menu";
-import {Col} from "react-bootstrap"
-// import {pasta, salad, sides, dessert, drink} from "../menu";
-// console.log(pizza.itemName)
+import React, { Component } from "react";
+import { BrowserRouter as  Router, Route } from "react-router-dom";
+import Landing from "../Pages/Landing";
+import { Provider } from "react-redux";
+import SignIn from "../Pages/SignIn"
+// import Navigation from "./Navbar/Nav";
+// import HeaderPhoto from "./Promophotos/HeaderPhoto";
+// import Menu from "./Menu/Menu";
+// import menu from "../Menudata/menu";
+// import {Col} from "react-bootstrap"
 
-function CreateCard (menu) {
-    return <Menu 
-    key = {menu.id}
-    title = {menu.itemName}
-    img = {menu.itemImg}/>
-}
-function App (){
-    return <div className="main-cont">
-        <Navigation />
-        <HeaderPhoto/>
-        <h2 className="menuh2">MENU</h2>
-        <Col xs={9} className="categoryCard">      
-        {menu.map(CreateCard)}
-        </Col>
-        {/* // title1={pizza[0].itemName}
-        // img1={pizza[0].itemImg}
-        // title2={pasta[0].itemName}
-        // img2={pasta[0].itemImg}
-        // title3={sides[0].itemName}
-        // img3={sides[0].itemImg}
-        // title4={dessert[0].itemName}
-        // img4={dessert[0].itemImg}
-        // title5={salad[0].itemName}
-        // img5={salad[0].itemImg}
-        // title6={drink[0].itemName}
-        // img6={drink[0].itemImg} */}
+// function App (){
+//     return <Landing />
+// //     return <div className="main-cont">
+// //     <Navigation />
+// //     <HeaderPhoto/>
+// //     <h2 className="menuh2">MENU</h2>
+// //     <Col xs={9} className="categoryCard">      
+// //     {menu.map(menu => (
+// //         <Menu 
+// // key = {menu.id}
+// // title = {menu.itemName}
+// // img = {menu.itemImg}/>
+// //     ))}
+// //     </Col> 
+// // </div>
+// } 
+
+class App extends Component {
+    render = () => (
         
-    </div>
+        <Router>
+            <div className="App">
+                <Route exact path="/" component={Landing}/>
+                {/* <Route exact path="/menu" component={FullMenu}/> */}
+                {/* <Route exact path="/cart" component={Cart}/> */}
+                <Route exact path="/login" component={SignIn}/>
+            </div>
+        </Router>
+       
+    );
 }
 export default App;
