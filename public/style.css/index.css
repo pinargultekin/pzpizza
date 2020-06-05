@@ -116,10 +116,31 @@ body{
     color: #EB4007;
     padding:0px;
     margin:0px;
-    height: 100%
+    height: 100%;
+    background-color: transparent;
 }
 .btn-outline-danger:hover{
     border-color: #C43606;
     background-color: #C43606;
     color:White;
+    
+}
+
+/* Login */
+.login-cont{
+    width:40%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 3%;
+}
+.login-btn{
+    width: 90px;
+    height: 40px;
+    float: right;
+}
+.registerh2, Form{
+    font-weight: bolder;
+    color: #3C3940;
 }
