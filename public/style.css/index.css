@@ -126,21 +126,43 @@ body{
     
 }
 
-/* Login */
-.login-cont{
+/* Register */
+.register-cont, .Login-cont{
     width:40%;
-    margin-top: 10%;
+    margin-top: 6%;
     margin-left: auto;
     margin-right: auto;
-    
     padding: 3%;
+}
+.log-form{
+    margin-left:20%;
+    margin-right:20%;
+}
+.register-btn{
+    width: 90px;
+    height: 40px;
+    float: right;
 }
 .login-btn{
     width: 90px;
     height: 40px;
     float: right;
+    margin-right:20%;
 }
-.registerh2, Form{
+.registerh2>a, Form{
     font-weight: bolder;
     color: #3C3940;
+}
+.registerh2>a:hover{
+    text-decoration: none;
+    color: #5F5C66; 
+}
+h2>span>a{
+    font-weight: bolder;
+    color: #3C3940; 
+}
+h2>span>a:hover{
+    font-weight: bolder;
+    color: #5F5C66; 
+    text-decoration: none;
 }
