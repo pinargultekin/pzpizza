@@ -13,8 +13,8 @@ function Navigation() {
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
     <Nav.Link className="navLink" href="/menu"  data-tip="Menu" to="/menu" ><MdRestaurantMenu/><ReactToolTip/></Nav.Link>
-<Nav.Link className="navLink" href="/menu" data-tip="Cart" to="/menu"><FiShoppingCart/><ReactToolTip/></Nav.Link>
-      <Nav.Link className="navLink" href="/login" data-tip="Log In" to="/login"><BsFillPersonFill/><ReactToolTip/></Nav.Link>
+    <Nav.Link className="navLink" href="/cart" data-tip="Cart" to="/cart"><FiShoppingCart/><ReactToolTip/></Nav.Link>
+    <Nav.Link className="navLink" href="/register" data-tip="Log In" to="/register"><BsFillPersonFill/><ReactToolTip/></Nav.Link>
     </Navbar.Collapse>
   </Navbar>
   </Col>

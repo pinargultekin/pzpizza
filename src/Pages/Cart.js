@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navigation from "../Components/Navbar/Nav";
 
-class Account extends Component{
+class Cart extends Component{
     render(){
         return <div className="main-cont">
         <Navigation />
@@ -9,4 +9,4 @@ class Account extends Component{
            </div>
     }
 }
-export default Account;
+export default Cart;
