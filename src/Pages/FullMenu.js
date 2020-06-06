@@ -8,7 +8,7 @@ class FullMenu extends Component{
     render(){
         return <div className="main-cont">
         <Navigation />
-        <h2 className="menuh2">MENU</h2>
+        <h2 className="fullMenu menuh2">MENU</h2>
      <Col xs={9} className="categoryCard">      
      {menu.map(menu => (
          <Menu 

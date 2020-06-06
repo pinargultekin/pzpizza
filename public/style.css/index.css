@@ -122,11 +122,13 @@ body{
 .btn-outline-danger:hover{
     border-color: #C43606;
     background-color: #C43606;
-    color:White;
-    
+    color:White;  
+}
+.btn-name{
+    padding-top: 8px;
 }
 
-/* Register */
+/* Register Page*/
 .register-cont, .Login-cont{
     width:40%;
     margin-top: 6%;
@@ -165,4 +167,8 @@ h2>span>a:hover{
     font-weight: bolder;
     color: #5F5C66; 
     text-decoration: none;
+}
+/* Menu Page */
+.fullMenu{
+    margin-top:10%;
 }
