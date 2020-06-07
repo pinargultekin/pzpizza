@@ -30,7 +30,7 @@ class Login extends Component {
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
         </Form.Row>
-        <Button className= "login-btn btn-outline-danger" type="submit">Sign In</Button>
+        <Button href="/account" className= "login-btn btn-outline-danger" type="submit">Sign In</Button>
       </Form>
       </div>
     };

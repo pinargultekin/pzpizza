@@ -5,6 +5,7 @@ import SignIn from "../Pages/SignIn";
 import SignUp from "../Pages/SignUp";
 import FullMenu from "../Pages/FullMenu";
 import Cart from "../Pages/Cart";
+import Account from "../Pages/Account";
 
 class App extends Component {
     render = () => (
@@ -16,6 +17,7 @@ class App extends Component {
                 <Route exact path="/cart" component={Cart}/>
                 <Route exact path="/register" component={SignUp}/>
                 <Route exact path="/login" component={SignIn}/>
+                <Route exact path="/account" component={Account} />
             </div>
         </Router>
        

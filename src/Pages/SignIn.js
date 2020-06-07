@@ -7,6 +7,7 @@ class SignIn extends Component{
       return <div className="main-cont">
       <Navigation />
       <Login />
+      
          </div>
    }
 }

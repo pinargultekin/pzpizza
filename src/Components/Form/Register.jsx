@@ -106,7 +106,7 @@ class Register extends Component {
             </Form.Control.Feedback>
           </Form.Group>
         </Form.Row>
-        <Button className= "register-btn btn-outline-danger" type="submit">Sign Up</Button>
+        <Button href="/account" className= "register-btn btn-outline-danger" type="submit">Sign Up</Button>
       </Form>
       </div>
     };
