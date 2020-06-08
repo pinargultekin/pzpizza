@@ -6,9 +6,9 @@ const menu = [
         itemMenu : ["Cheese Pizza", "Pepperoni Pizza", "Supreme Pizza", "Create Your Own"],
         itemType : ["Thin Crust", "Handtossed Crust", "Pan Crust", "Gluten-Free Crust", "Stuffed Crust"],
         itemSize : [`10"`,`12"`,`14"`,`16"`,],
-        itemSauce : ["No Sauce", "Tomato", "BBQ", "Garlic", "Alfredo", "Pesto", "Buffalo Sauce"],
+        itemSauce : ["No Sauce", "Tomato Sauce", "BBQ Sauce", "Garlic Sauce", "Alfredo Sauce", "Pesto Sauce", "Buffalo Sauce"],
         itemMeatTop : ["Sausage","Pepperoni","Ham", "Bacon", "Beef", "Pork", "Chicken", "Steak"],
-        itemVegieTop : ["Mushroom", "Olives", "Tomato", "Spinach", "Onion", "Green Bell Pepper", "Banana Pepper", "Pineapple", "Jalapeno Peppers","Feta Cheese", "Roasted Red Pepper"]
+        itemVegieTop : ["Mushroom", "Olives", "Tomato", "Spinach", "Onion", "Green Bell Pepper", "Banana Pepper", "Pineapple", "Jalapeno Peppers","Pizza Cheese","Feta Cheese", "Mozerella Cheese", "Cheddar Cheese", "Roasted Red Pepper","Corn"]
     },
     {
         id : 2,
@@ -17,9 +17,9 @@ const menu = [
         itemMenu : ["Chicken Alfredo Pasta", "Meaty Marinara Pasta", "Create Your Own"],
         itemType : ["Gluten-Free", "Lentil Pasta","Black Bean Pasta", "Plain Pasta"],
         itemSize : [],
-        itemSauce : ["No Sauce", "Tomato", "Marinara", "Pesto", "Alfredo"],
+        itemSauce : ["No Sauce", "Tomato Sauce", "Marinara Sauce", "Pesto Sauce", "Alfredo Sauce"],
         itemMeatTop : ["Sausage", "Shrimp", "Chicken", "Beef", "Steak", "Pork", "Bacon", "Ham"],
-        itemVegieTop : ["Mushroom", "Olives", "Tomato", "Onion", "Green Bell Pepper", "Banana Pepper", "Jalapeno Peppers","Feta Cheese", "Parmesan Cheese"]
+        itemVegieTop : ["Mushroom", "Olives", "Tomato", "Onion", "Green Bell Pepper", "Banana Pepper", "Jalapeno Peppers","Pizza Cheese", "Feta Cheese", "Parmesan Cheese", "Cheddar Cheese", "Mozerella Cheese"]
     
     },
     {
@@ -29,9 +29,9 @@ const menu = [
         itemMenu : ["Mediterranian Salad", "Chicken Caesar Salad", "Kale Garden Salad", "Create Your Own"],
         itemType : ["Kinoa", "Brown Rice", "Wild Rice", "Cauliflower Rice", "No Base"],
         itemSize : [],
-        itemSauce : ["No Dressing", "Tahini Dressing", "Tzaziki Dressing", "Cashew Pesto Dressing", "Thousand Island Dressing", "Caeser Dressing", "Ranch Dressing", "Balsamic Vinaigrettes", "Italian Dressing", "Lime Cilantro Dressing"],
-        itemMeatTop : ["Chicken", "Shrimp", "Steak"],
-        itemVegieTop : ["Cilantro", "Kale", "Romaine", "Spinach", "Spring Mix", "Carrot", "Beet", "Red Cabbage", "Broccoli", "Red Onion", "Tomato", "Cucumber", "Chickpeas", "Corn", "Black Beans", "Basil", "Mint", "Parsley", "Feta Cheese", "Parmesan Cheese", "Goat Cheese", "Blue Cheese", "Dried Tomato"]
+        itemSauce : ["No Dressing", "Tahini Dressing", "Tzaziki Dressing", "Cashew Pesto Dressing", "Thousand Island Dressing", "Caesar Dressing", "Ranch Dressing", "Balsamic Vinaigrettes", "Italian Dressing", "Lime Cilantro Dressing"],
+        itemMeatTop : ["Roasted Chicken", "Shrimp", "Steak"],
+        itemVegieTop : ["Cilantro", "Kale", "Iceberg Lettuce","Romaine", "Spinach", "Spring Mix", "Carrot", "Beet", "Red Cabbage", "Broccoli", "Red Onion", "Tomato", "Cucumber", "Chickpeas", "Corn", "Black Beans", "Basil", "Mint", "Parsley", "Feta Cheese", "Parmesan Cheese", "Goat Cheese", "Blue Cheese", "Dried Tomato"]
     
     },
     {
@@ -42,8 +42,8 @@ const menu = [
         itemType : [],
         itemSize : [],
         itemSauce : [],
-        itemMeatTop : [],
-        itemVegieTop : []
+        itemMeatTop : ["Shaved Steak", "Bacon"],
+        itemVegieTop : ["Mozerella Cheese", "Cheddar Cheese"]
     },
     {
         id : 5,

@@ -31,7 +31,7 @@ body{
 .logo{
     height:80px;
     width: 80px;
-    /* margin-left: 18rem; */
+    /* margin-left: 25rem; */
 }
 .navLink{
     font-size: 20px;
@@ -172,3 +172,66 @@ h2>span>a:hover{
 .fullMenu{
     margin-top:10%;
 }
+.menu-header{
+    margin-top:10%;
+    text-align: center;
+}
+/* Pizza Cards */
+/* .pizza-cont{
+    margin-top: 10%;
+} */
+.categoryCard-pizza{
+    margin: 0 auto; 
+    display: flex;
+    flex:1;
+    flex-direction: row; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ .indv-card-pizza{
+     margin: 50px 20px;
+     height: 32rem;
+     width: 18rem;
+ }
+ .pz-card-title:hover{
+color: #DE3C07;
+font-weight: bolder;
+ }
+ .pz-card-title{
+     text-align: center;
+     word-break: break-all;
+ }
+ .add-btn, .edit-btn{
+    float: right;
+    display: block; 
+    background-color: transparent;
+    color:#FF5921;
+    border-color: transparent;
+    padding-top: 0px;
+ }
+
+ .edit-btn:hover, .add-btn:hover{
+    background-color: transparent;
+    color:#FF5921;
+    border-color: transparent;
+ }
+ .edit-btn:focus, .add-btn:focus{
+    background-color: transparent;
+    color:#FF5921;
+    border-color: transparent;
+    box-shadow: none;
+ }
+ .edit-btn:active, .add-btn:active{
+    background-color: transparent!important;
+    color:rgba(255, 88, 33, 0.63)!important;
+    border-color: transparent!important;
+    box-shadow: none!important;
+ }
+ .ingr-title{
+    padding-top:1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: rgba(95, 92, 102, 0.459) solid 1px;
+ }
+ .ingr-names{
+    padding-top:1rem;
+ }
