@@ -8,6 +8,7 @@ import Cart from "../Pages/Cart";
 import Account from "../Pages/Account";
 import Pizza from "../Components/Menu/Pizza";
 import Pasta from "../Components/Menu/Pasta";
+import Salad from "../Components/Menu/Salad";
 
 class App extends Component {
     render = () => (
@@ -20,8 +21,9 @@ class App extends Component {
                 <Route exact path="/register" component={SignUp}/>
                 <Route exact path="/login" component={SignIn}/>
                 <Route exact path="/account" component={Account} />
-                <Route exact path="/pizza" component={Pizza} />
+                <Route exact path="/Pizza" component={Pizza} />
                 <Route exact path="/Pasta" component={Pasta} />
+                <Route exact path="/Salad" component={Salad} />
             </div>
         </Router>
        

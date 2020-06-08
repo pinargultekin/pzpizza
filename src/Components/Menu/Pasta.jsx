@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import {Col} from "react-bootstrap";
 import Navigation from "../Navbar/Nav";
-import PastaCards from "../Cards/PastaCards"
+import PizzaCards from "../Cards/PizzaCards"
 import {Pastas} from "../../Menudata/Ingredients";
-console.log(Pastas);
+
 class Pasta extends Component{
 
     render(){
@@ -12,7 +12,7 @@ class Pasta extends Component{
             <h1 className= "menu-header">PASTA</h1>
             <Col xs={9} className="categoryCard-pizza">  
             {Pastas.map(Pastas => (
-                <PastaCards 
+                <PizzaCards 
                     key={Pastas.id}
                     title= {Pastas.name}
                     img={Pastas.img}
