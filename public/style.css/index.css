@@ -95,12 +95,17 @@ body{
 }
 .indv-card{
     margin: 50px 20px;
-    height: 20rem;
+    height: 22.5rem;
     width: 18rem;
 }
 .topCardImg{
     width:100%;
-    height: 200px;
+    height: 50%;
+    margin-bottom: 5%;
+}
+.menuCardImg{
+    width:100%;
+    height:230px;
 }
 .card-title{
     font-size: 25px;
@@ -116,7 +121,6 @@ body{
     color: #EB4007;
     padding:0px;
     margin:0px;
-    height: 100%;
     background-color: transparent;
 }
 .btn-outline-danger:hover{
@@ -199,7 +203,7 @@ font-weight: bolder;
  }
  .pz-card-title{
      text-align: center;
-     word-break: break-all;
+     word-break: keep-all;
  }
  .add-btn, .edit-btn{
     float: right;

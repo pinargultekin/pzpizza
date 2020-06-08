@@ -20,25 +20,28 @@ const Pizzas =[
     {
         id:14,
         name: "Create Your Own",
-        img: "https://image.freepik.com/free-vector/pizza-toppings-pile-composition_1284-26412.jpg",
+        img: "https://lh3.googleusercontent.com/proxy/XUimOfs7yiwOS__UbKn1IU0Tzxq0RlzDyTg4zmRJgRZOciSnHYCjIV2uSVltPCntBdlP0vzNXg7GzlQ8p4ggadfrNV8AEyAFw7Ur_Y4j-2rmDhM6ij6QzJ90rpQp5KOGmBiXkoZIKP_vKh_8Dg",
         ingredients: []
     }
 ]
 
-const Pasta=[
+const Pastas=[
     {
         id:21,
         name: "Chicken Alfredo Pasta",
-        ingredients: ["Plain Pasta","Alfredo Sauce", "Mozerella Cheese", "Chicken"]
+        img: "https://www.sixsistersstuff.com/wp-content/uploads/2015/05/One-Pan-Alfredo-2-768x1152.jpg",
+        ingredients: ["Plain Pasta, ","Alfredo Sauce, ", "Mozerella Cheese, ", "Chicken"]
     },
     {
         id:22,
         name: "Meaty Marinara Pasta",
-        ingredients: ["Plain Pasta", "Marinara Sauce", "Sausage", "Beef", "Parmesan Cheese"]
+        img: "https://ministryofcurry.com/wp-content/uploads/2017/04/IMG_2600.jpg",
+        ingredients: ["Plain Pasta, ", "Marinara Sauce, ", "Sausage, ", "Beef, ", "Parmesan Cheese"]
     },
     {
         id:23,
         name: "Create Your Own",
+        img: "../../images/cyopasta.webp",
         ingredients: []
     }
 ]
@@ -163,5 +166,5 @@ const Drink = [
     }
 ]
 
-export default Pizzas; 
-export {Pasta, Salad, Sides, Dessert, Drink};
+// export default Pizzas; 
+export {Pizzas, Pastas, Salad, Sides, Dessert, Drink};

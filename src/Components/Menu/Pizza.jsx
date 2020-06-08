@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import {Col} from "react-bootstrap";
 import Navigation from "../Navbar/Nav";
 import PizzaCards from "../Cards/PizzaCards"
-import Pizzas from "../../Menudata/Ingredients";
+import {Pizzas} from "../../Menudata/Ingredients";
 
 class Pizza extends Component{
-
     render(){
         return <div className="main-cont">
             <Navigation />
