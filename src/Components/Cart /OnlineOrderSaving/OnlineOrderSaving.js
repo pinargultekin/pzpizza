@@ -23,7 +23,7 @@ export default class onlineOrderSavings extends Component {
     const tooltip = (
       <Tooltip id="tooltip">
         <p>
-          Order online your order to cut costs!
+          Order online to cut the cost!
         </p>
       </Tooltip>
     );
@@ -31,7 +31,7 @@ export default class onlineOrderSavings extends Component {
       <Row className="show-grid">
         <Col md={6}>
           <OverlayTrigger placement="bottom" overlay={tooltip}>
-            <div style={styles.onlineOrderSavings}>Online Order Savings</div>
+            <div style={styles.onlineOrderSavings}>Online Savings</div>
           </OverlayTrigger>
         </Col>
         <Col style={styles.totalSavings} md={6}>{`$${this.props.price}`}</Col>

@@ -7,7 +7,7 @@ import {
   Row,
   Col,
   FormGroup,
-  ControlLabel,
+  FormLabel,
   FormControl
 } from 'react-bootstrap';
 
@@ -49,7 +49,7 @@ class PromoCodeDiscount extends Component {
                 <Col md={12}>
                   <Form>
                     <FormGroup controlId="formInlineName">
-                      <ControlLabel>Promo Code</ControlLabel>{' '}
+                      <FormLabel>Promo Code</FormLabel>{' '}
                       <FormControl
                         type="text"
                         placeholder="Enter promo code"
