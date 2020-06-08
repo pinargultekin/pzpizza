@@ -1,5 +1,5 @@
 import React from "react";
-import MenuCards from "./MenuCards"
+import MenuCards from "../Cards/MenuCards"
 // import {Card, CardGroup,Row, Col} from "react-bootstrap"
 
 
