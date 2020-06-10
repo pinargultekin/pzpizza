@@ -147,12 +147,14 @@ body{
 .register-btn{
     width: 90px;
     height: 40px;
+    padding-top:8px;
     float: right;
 }
 .login-btn{
     width: 90px;
     height: 40px;
     float: right;
+    padding-top:8px;
     margin-right:20%;
 }
 .registerh2>a, Form{
