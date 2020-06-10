@@ -2,13 +2,13 @@
 import Navigation from "../Components/Navbar/Nav"
 import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
-import SubTotal from '../Components/Cart /Subtotal/Subtotal';
-import OrderOnlineSaving from '../Components/Cart /OnlineOrderSaving/OnlineOrderSaving';
-import TaxesFees from '../Components/Cart /TaxAndFees/TaxAndFees';
-import EstimatedTotal from '../Components/Cart /EstimatedTotal/EstimatedTotal';
+import SubTotal from '../Components/Cart/Subtotal/Subtotal';
+import OrderOnlineSaving from '../Components/Cart/OnlineOrderSaving/OnlineOrderSaving';
+import TaxesFees from '../Components/Cart/TaxAndFees/TaxAndFees';
+import EstimatedTotal from '../Components/Cart/EstimatedTotal/EstimatedTotal';
 // import ItemDetails from './components/ItemDetails/ItemDetails';
 // import PromoCodeDiscount from './components/PromoCode/PromoCode';
-import '../Components/Cart /Cart.css'
+import '../Components/Cart/Cart.css'
 // Import redux provider
 import { connect } from 'react-redux';
 import { handleChange } from '../actions/promoCodeActions';
@@ -53,7 +53,7 @@ class Cart extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="main-cont">
         <Navigation />
         <Container className="purchase-card">
           <SubTotal price={this.state.total.toFixed(2)} />
