@@ -1,9 +1,40 @@
 import React, { Component } from "react";
 import {Form, Col, Button} from "react-bootstrap";
+
+
 class Register extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.onChangeFirstName = this.onChangeFirstName.bind(this);
+    this.onChangeLastName = this.onChangeLastName.bind(this);
+    this.onChangeEmail = this.onChangeEmail.bind(this);
+    this.onChangePhoneNumber = this.onChangePhoneNumber.bind(this);
+    this.onChangePassword = this.onChangePassword.bind(this);
+    this.onChangeAddress = this.onChangeAddress.bind(this);
+    this.onChangeCity = this.onChangeCity.bind(this);
+    this.onChangeState = this.onChangeState.bind(this);
+    this.onChangeZip = this.onChangeZip.bind(this);
+
+    this.onSubmit = this.onSubmit.bind(this);
+
+    this.state = {
+      firstName: '',
+      lastName: '',
+      email: '',
+      phoneNumber:'',
+      password:'',
+      address:'',
+      city:'',
+      state:'',
+      zip:''
+    }
+  }
    
     
     render(){
+
         
         return  <div className="register-cont">
             <h2 className="registerh2"><a href="/register">Register</a> <span style={{float:"right"}}><a href="/login">Log In</a></span></h2>
