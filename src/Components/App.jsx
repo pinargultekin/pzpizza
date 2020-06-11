@@ -9,6 +9,9 @@ import Account from "../Pages/Account";
 import Pizza from "../Components/Menu/Pizza";
 import Pasta from "../Components/Menu/Pasta";
 import Salad from "../Components/Menu/Salad";
+import Side from "../Components/Menu/Side";
+import Dessert from "../Components/Menu/Dessert";
+import Drink from "../Components/Menu/Drink";
 
 class App extends Component {
     render = () => (
@@ -24,6 +27,9 @@ class App extends Component {
                 <Route exact path="/Pizza" component={Pizza} />
                 <Route exact path="/Pasta" component={Pasta} />
                 <Route exact path="/Salad" component={Salad} />
+                <Route exact path="/Sides" component={Side} />
+                <Route exact path="/Dessert" component={Dessert} />
+                <Route exact path="/Drink" component={Drink} />
             </div>
         </Router>
        

@@ -1,6 +1,5 @@
-/* Color Selection */
-#colorSelection{
-    /* 
+/* Color Selection 
+
     red0 = #FF5921;
     red1 = #EB4007;
     red2 = #DE3C07;
@@ -22,7 +21,7 @@
     gray = #535059; ->
     gray = #3C3940;
 */
-}
+
 /* Body */
 body{
     font-family: 'Montserrat', sans-serif;
@@ -241,3 +240,13 @@ font-weight: bolder;
  .ingr-names{
     padding-top:1rem;
  }
+
+ .miniNavBar{
+ margin-left: 30%;
+ }
+ .nav-link{
+   margin-right:5%;  
+ }
+ /* .miniNavBar:first-child{
+   margin-left: 35%  
+ } */

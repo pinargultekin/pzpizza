@@ -3,6 +3,7 @@ import {Col} from "react-bootstrap";
 import Navigation from "../Navbar/Nav";
 import PizzaCards from "../Cards/PizzaCards"
 import {Pastas} from "../../Menudata/Ingredients";
+import MiniNav from "../Navbar/miniNav";
 
 class Pasta extends Component{
 
@@ -10,6 +11,7 @@ class Pasta extends Component{
         return <div className="main-cont">
             <Navigation />
             <h1 className= "menu-header">PASTA</h1>
+            <MiniNav />
             <Col xs={9} className="categoryCard-pizza">  
             {Pastas.map(Pastas => (
                 <PizzaCards 
