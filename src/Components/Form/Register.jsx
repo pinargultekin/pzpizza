@@ -110,14 +110,17 @@ class Register extends Component {
             <h2 className="registerh2"><a href="/register">Register</a> <span style={{float:"right"}}><a href="/login">Log In</a></span></h2>
             <hr/>
             <br/>
-            <Form>
+            <Form >
         <Form.Row>
           <Form.Group as={Col} md="6" controlId="validationCustom01">
             <Form.Label>First name</Form.Label>
             <Form.Control
               required
               type="text"
+              name="firstName"
               placeholder="Rachel"
+              value={this.state.firstName}
+              onChange = {this.onChangeFirstName}
             />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
@@ -126,7 +129,10 @@ class Register extends Component {
             <Form.Control
               required
               type="text"
+              name="lastName"
               placeholder="Green"
+              value={this.state.lastName}
+              onChange = {this.onChangeLastName}
             />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
@@ -138,7 +144,10 @@ class Register extends Component {
             <Form.Control
               required
               type="mail"
+              name="email"
               placeholder="email@mail.com"
+              value={this.state.email}
+              onChange = {this.onChangeEmail}
             />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
@@ -147,7 +156,10 @@ class Register extends Component {
             <Form.Control
               required
               type="text"
+              name="phoneNumber"
               placeholder="123 456 7890"
+              value={this.state.phoneNumber}
+              onChange = {this.onChangePhoneNumber}
             />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
@@ -159,7 +171,10 @@ class Register extends Component {
             <Form.Control
               required
               type="mail"
+              name="phoneNumber"
               placeholder="Password"
+              value={this.state.email}
+              onChange = {this.onChangeEmail}
             />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
@@ -168,6 +183,7 @@ class Register extends Component {
             <Form.Control
               required
               type="text"
+              name="confirmPassword"
               placeholder="Confirm Password"
             />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
@@ -177,7 +193,13 @@ class Register extends Component {
         <Form.Row>
           <Form.Group as={Col} md="12" controlId="validationCustom03">
             <Form.Label>Address</Form.Label>
-            <Form.Control type="text" placeholder="123 Main St. Apt. 1" required />
+            <Form.Control 
+            type="text" 
+            name="address"
+            placeholder="123 Main St. Apt. 1" 
+            required
+            value={this.state.address}
+            onChange = {this.onChangeAddress} />
             <Form.Control.Feedback type="invalid">
               Please provide a valid address.
             </Form.Control.Feedback>
@@ -186,7 +208,14 @@ class Register extends Component {
           <Form.Row>
           <Form.Group as={Col} md="5" controlId="validationCustom03">
             <Form.Label>City</Form.Label>
-            <Form.Control type="text" placeholder="Boston" required />
+            <Form.Control 
+            type="text" 
+            name="city"
+            placeholder="Boston" 
+            required 
+            value={this.state.city}
+            onChange = {this.onChangeCity}
+            />
             <Form.Control.Feedback type="invalid">
               Please provide a valid address.
             </Form.Control.Feedback>
@@ -194,20 +223,34 @@ class Register extends Component {
           
           <Form.Group as={Col} md="5" controlId="validationCustom04">
             <Form.Label>State</Form.Label>
-            <Form.Control type="text" placeholder="MA" required />
+            <Form.Control 
+            type="text" 
+            name="state"
+            placeholder="MA" 
+            required
+            value={this.state.state}
+            onChange = {this.onChangeState}
+               />
             <Form.Control.Feedback type="invalid">
               Please provide a valid state.
             </Form.Control.Feedback>
           </Form.Group>
           <Form.Group as={Col} md="2" controlId="validationCustom05">
             <Form.Label>Zip</Form.Label>
-            <Form.Control type="text" placeholder="02008" required />
+            <Form.Control 
+            type="text" 
+            name="zip"
+            placeholder="02008" 
+            required
+            value={this.state.zip}
+            onChange = {this.onChangeZip}
+             />
             <Form.Control.Feedback type="invalid">
               Please provide a valid zip.
             </Form.Control.Feedback>
           </Form.Group>
         </Form.Row>
-        <Button href="/account" className= "register-btn btn-outline-danger" type="submit">Sign Up</Button>
+        <Button onSubmit= {this.onSubmit} href="/account" className= "register-btn btn-outline-danger" type="submit">Sign Up</Button>
       </Form>
       </div>
     };
