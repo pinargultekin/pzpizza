@@ -101,7 +101,10 @@ class Register extends Component {
       state: this.state.state,
       zip: this.state.zip
     }
-    
+    axios.post('http://localhost:5000/users/add/', user)
+      .then(res => console.log(res.data));
+
+    window.location = './Pages/Landing';
   }
     render(){
 
@@ -143,7 +146,7 @@ class Register extends Component {
             <Form.Label>Email</Form.Label>
             <Form.Control
               required
-              type="mail"
+              type="text"
               name="email"
               placeholder="email@mail.com"
               value={this.state.email}
