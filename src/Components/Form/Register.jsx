@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {Form, Col, Button} from "react-bootstrap";
+import axios from 'axios';
 
 
 class Register extends Component {
@@ -32,7 +33,76 @@ class Register extends Component {
     }
   }
    
+  onChangeFirstName(e) {
+    this.setState({
+      firstName: e.target.value
+    })
+  }
+
+  onChangeLastName(e) {
+    this.setState({
+      lastName: e.target.value
+    })
+  }
     
+  onChangeEmail(e) {
+    this.setState({
+      email: e.target.value
+    })
+  }
+
+  onChangePhoneNumber(e) {
+    this.setState({
+      phoneNumber: e.target.value
+    })
+  }
+
+  onChangePassword(e) {
+    this.setState({
+      password: e.target.value
+    })
+  }
+
+  onChangeAddress(e) {
+    this.setState({
+      address: e.target.value
+    })
+  }
+  
+  onChangeCity(e) {
+    this.setState({
+      city: e.target.value
+    })
+  }
+
+  onChangeState(e) {
+    this.setState({
+      state: e.target.value
+    })
+  }
+
+  onChangeZip(e) {
+    this.setState({
+      zip: e.target.value
+    })
+  }
+
+  onSubmit(e) {
+    e.preventDefault();
+
+    const user = {
+      firstName: this.state.username,
+      lastName: this.state.lastName,
+      email: this.state.email,
+      phoneNumber: this.state.phoneNumber,
+      password: this.state.password,
+      address: this.state.address,
+      city: this.state.city,
+      state: this.state.state,
+      zip: this.state.zip
+    }
+    
+  }
     render(){
 
         
