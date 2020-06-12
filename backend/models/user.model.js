@@ -6,16 +6,14 @@ const userSchema = new Schema({
   firstName: {
     type: String,
     required: true,
-    unique: true,
-    trim: true,
-    minlength: 3
+    unique: false,
+    trim: true
   },
   lastName: {
     type: String,
     required: true,
-    unique: true,
-    trim: true,
-    minlength: 3
+    unique: false,
+    trim: true
   },
   email: {
     type: String,
@@ -31,34 +29,31 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: true,
-    unique: true,
-    trim: true,
-    minlength: 8
+    unique: false,
+    trim: true
   },
   address: {
     type: String,
     required: true,
-    unique: true,
+    unique: false,
   },
   city: {
     type: String,
     required: true,
-    unique: true,
+    unique: false,
     trim: true,
   },
   state: {
     type: String,
     required: true,
-    unique: true,
-    trim: true,
-    minlength: 2
+    unique: false,
+    trim: true
   },
-  lastName: {
+  zip: {
     type: String,
     required: true,
-    unique: true,
+    unique: false,
     trim: true,
-    minlength: 5
   }
 }, {
   timestamps: true,
