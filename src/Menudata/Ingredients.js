@@ -20,7 +20,7 @@ const Pizzas =[
     {
         id:14,
         name: "Create Your Own",
-        img: "https://lh3.googleusercontent.com/proxy/jqHnm2TunBsYkTNlxFSIMd7JXv3vuuY_Xz6BiGOtNjeGW_UKgjoy4jgWKnKrPHEKQ-Zh7hGPmWzofqGOBxzO7UqrgzG45LRbLQZVGchD7BSU1YL2lEhzk6YR7j2wdjtD7vV3vB74ZehVduSqAA",
+        img: "../../images/cyo-pizza.jpg",
         ingredients: []
     }
 ]

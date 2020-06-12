@@ -4,6 +4,7 @@ import Navigation from "../Navbar/Nav";
 import PizzaCards from "../Cards/PizzaCards"
 import {Pizzas} from "../../Menudata/Ingredients";
 import MiniNav from "../Navbar/miniNav";
+import Footer from "../Footer/Footer";
 
 class Pizza extends Component{
     render(){
@@ -22,6 +23,7 @@ class Pizza extends Component{
                     
             ))}
           </Col> 
+          <Footer />
         </div>
     }
 }

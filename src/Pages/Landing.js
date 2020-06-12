@@ -2,6 +2,7 @@ import React , {Component} from "react";
 // import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navigation from "../Components/Navbar/Nav";
 import HeaderPhoto from "../Components/Promophotos/HeaderPhoto";
+import Footer from "../Components/Footer/Footer";
 import Menu from "../Components/Menu/Menu";
 import menu from "../Menudata/menu";
 import {Col} from "react-bootstrap";
@@ -21,6 +22,7 @@ return <div className="main-cont">
  img = {menu.itemImg}/>
      ))}
      </Col> 
+     <Footer />
  </div>
 }
 }

@@ -138,6 +138,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding: 3%;
+    margin-bottom:9%;
 }
 .log-form{
     margin-left:20%;
@@ -247,6 +248,26 @@ font-weight: bolder;
  .nav-link{
    margin-right:5%;  
  }
- /* .miniNavBar:first-child{
-   margin-left: 35%  
- } */
+/* Footer */
+.footer-p{
+    color:white;
+    font-size: 12px;
+}
+.footer{
+    height:100px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.footer-brand{
+    margin:0;
+}
+.footer-nav{
+    justify-content: space-around;
+    background-color: #3C3940!important;
+}
+.footer-brand>.logo{
+    width: 45px;
+    height: 45px;
+    margin-bottom:5px;
+}

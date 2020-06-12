@@ -4,6 +4,7 @@ import Navigation from "../Navbar/Nav";
 import PizzaCards from "../Cards/PizzaCards"
 import {Drinks} from "../../Menudata/Ingredients";
 import MiniNav from "../Navbar/miniNav";
+import Footer from "../Footer/Footer";
 
 class Drink extends Component{
 
@@ -23,6 +24,7 @@ class Drink extends Component{
                     
             ))}
           </Col> 
+          <Footer />
         </div>
     }
 }

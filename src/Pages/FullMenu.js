@@ -3,6 +3,7 @@ import {Col} from "react-bootstrap";
 import Navigation from "../Components/Navbar/Nav";
 import menu from "../Menudata/menu";
 import Menu from "../Components/Menu/Menu";
+import Footer from "../Components/Footer/Footer";
 
 class FullMenu extends Component{
     render(){
@@ -17,6 +18,7 @@ class FullMenu extends Component{
  img = {menu.itemImg}/>
      ))}
      </Col> 
+     <Footer />
            </div>
     }
 }
