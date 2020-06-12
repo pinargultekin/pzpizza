@@ -37,6 +37,7 @@ class Register extends Component {
     this.setState({
       firstName: e.target.value
     })
+    
   }
 
   onChangeLastName(e) {
@@ -88,7 +89,6 @@ class Register extends Component {
   }
 
   onSubmit(e) {
-    e.preventDefault();
 
     const user = {
       firstName: this.state.username,
@@ -101,10 +101,26 @@ class Register extends Component {
       state: this.state.state,
       zip: this.state.zip
     }
-    axios.post('http://localhost:5000/users/add/', user)
-      .then(res => console.log(res.data));
-
-    window.location = './Pages/Landing';
+    console.log(user);
+    
+    axios.post({
+      url: 'http://localhost:5000/users/add',
+      data: {firstName: this.state.username,
+        lastName: this.state.lastName,
+        email: this.state.email,
+        phoneNumber: this.state.phoneNumber,
+        password: this.state.password,
+        address: this.state.address,
+        city: this.state.city,
+        state: this.state.state,
+        zip: this.state.zip}})
+      .then((response) => {
+        console.log(response);
+      }, (error) => {
+        console.log(error);
+      });
+      
+    window.location = 'http://localhost:3000';
   }
     render(){
 
@@ -113,7 +129,7 @@ class Register extends Component {
             <h2 className="registerh2"><a href="/register">Register</a> <span style={{float:"right"}}><a href="/login">Log In</a></span></h2>
             <hr/>
             <br/>
-            <Form >
+            <Form>
         <Form.Row>
           <Form.Group as={Col} md="6" controlId="validationCustom01">
             <Form.Label>First name</Form.Label>
@@ -173,11 +189,11 @@ class Register extends Component {
             <Form.Label>Password</Form.Label>
             <Form.Control
               required
-              type="mail"
-              name="phoneNumber"
+              type="text"
+              name="password"
               placeholder="Password"
-              value={this.state.email}
-              onChange = {this.onChangeEmail}
+              value={this.state.password}
+              onChange = {this.onChangePassword}
             />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
@@ -253,7 +269,7 @@ class Register extends Component {
             </Form.Control.Feedback>
           </Form.Group>
         </Form.Row>
-        <Button onSubmit= {this.onSubmit} href="/account" className= "register-btn btn-outline-danger" type="submit">Sign Up</Button>
+        <Button onSubmit={this.onSubmit} href="/account" className= "register-btn btn-outline-danger" type="submit">Sign Up</Button>
       </Form>
       </div>
     };
