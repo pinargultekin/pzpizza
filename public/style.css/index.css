@@ -183,9 +183,7 @@ h2>span>a:hover{
     text-align: center;
 }
 /* Pizza Cards */
-/* .pizza-cont{
-    margin-top: 10%;
-} */
+
 .categoryCard-pizza{
     margin: 0 auto; 
     display: flex;
@@ -196,7 +194,7 @@ h2>span>a:hover{
  }
  .indv-card-pizza{
      margin: 50px 20px;
-     height: 32rem;
+     height: 25rem;
      width: 18rem;
  }
  .pz-card-title:hover{
@@ -206,19 +204,22 @@ font-weight: bolder;
  .pz-card-title{
      text-align: center;
      word-break: keep-all;
+     border-bottom: rgba(95, 92, 102, 0.459) solid 1px;
+     margin-bottom:1rem;
  }
  .add-btn, .edit-btn{
-    float: right;
+    /* float: right; */
     display: block; 
     background-color: transparent;
     color:#FF5921;
     border-color: transparent;
     padding-top: 0px;
+    margin-top:1rem;
  }
 
  .edit-btn:hover, .add-btn:hover{
     background-color: transparent;
-    color:#FF5921;
+    color: #FF5921;
     border-color: transparent;
  }
  .edit-btn:focus, .add-btn:focus{
@@ -233,14 +234,24 @@ font-weight: bolder;
     border-color: transparent!important;
     box-shadow: none!important;
  }
- .ingr-title{
+ .price-tag{
+     border-bottom: rgba(95, 92, 102, 0.459) solid 1px;
+     padding-bottom:10px;
+     
+ }
+ /* .ingr-title{
+    padding: 1rem 1rem 0.5rem 1.5rem;
     padding-top:1rem;
     padding-bottom: 0.5rem;
     border-bottom: rgba(95, 92, 102, 0.459) solid 1px;
- }
- .ingr-names{
-    padding-top:1rem;
- }
+ } */
+ /* .ingre-titles>.btn{
+     float: right;   
+ } */
+ /* .ingr-names{
+    padding:1rem;
+    text-align: justify;
+ } */
 
  .miniNavBar{
  margin-left: 30%;
@@ -271,3 +282,37 @@ font-weight: bolder;
     height: 45px;
     margin-bottom:5px;
 }
+
+/* Modals */
+#contained-modal-title-vcenter{
+    color:#3C3940;
+    font-weight: bolder;
+}
+.modal-header{
+    background-color: rgba(255, 211, 110, 0.486);
+    border-bottom: none;
+}
+.modal-footer{
+    border-top: none;
+}
+ /* Options */
+ #selectSize{
+     border:none;
+     border-bottom:rgba(95, 92, 102, 0.459) solid 1px;
+     border-radius: 0px;
+     width:88%;
+     float:left;
+     margin-top:-.4rem;
+ }
+ /* #selectSize>option{
+     background-color: rgba(255, 88, 33, 0.151);
+     border:none;
+ }
+ #selectSize>option:focus{
+     background-color: rgba(255, 88, 33, 0.151);
+     border:none;
+ } */
+ .form-control option:hover{
+    background-color: rgba(255, 88, 33, 0.151); 
+    border:none;
+ }

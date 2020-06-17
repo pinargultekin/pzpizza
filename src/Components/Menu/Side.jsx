@@ -20,6 +20,8 @@ class Side extends Component{
                     title= {Sides.name}
                     img={Sides.img}
                     menu={Sides.ingredients}
+                    price={Sides.price}
+                    size={Sides.size}
                     />
                     
             ))}

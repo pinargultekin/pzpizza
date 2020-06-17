@@ -20,6 +20,8 @@ class Pasta extends Component{
                     title= {Pastas.name}
                     img={Pastas.img}
                     menu={Pastas.ingredients}
+                    price={Pastas.price}
+                    size={Pastas.size}
                     />
                     
             ))}

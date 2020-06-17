@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import { BrowserRouter as  Router, Route } from "react-router-dom";
-import Landing from "../Pages/Landing";
-import SignIn from "../Pages/SignIn";
-import SignUp from "../Pages/SignUp";
-import FullMenu from "../Pages/FullMenu";
-import Cart from "../Pages/Cart";
-import Account from "../Pages/Account";
-import Pizza from "../Components/Menu/Pizza";
-import Pasta from "../Components/Menu/Pasta";
-import Salad from "../Components/Menu/Salad";
-import Side from "../Components/Menu/Side";
-import Dessert from "../Components/Menu/Dessert";
-import Drink from "../Components/Menu/Drink";
+import Landing from "../../Pages/Landing";
+import SignIn from "../../Pages/SignIn";
+import SignUp from "../../Pages/SignUp";
+import FullMenu from "../../Pages/FullMenu";
+import Cart from "../../Pages/Cart";
+import Account from "../../Pages/Account";
+import Pizza from "../Menu/Pizza";
+import Pasta from "../Menu/Pasta";
+import Salad from "../Menu/Salad";
+import Side from "../Menu/Side";
+import Dessert from "../Menu/Dessert";
+import Drink from "../Menu/Drink";
 
 class App extends Component {
     render = () => (

@@ -19,6 +19,8 @@ class Salad extends Component{
                     title= {Salads.name}
                     img={Salads.img}
                     menu={Salads.ingredients}
+                    price={Salads.price}
+                    size={Salads.size}
                     />
                     
             ))}

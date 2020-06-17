@@ -20,6 +20,8 @@ class Dessert extends Component{
                     title= {Desserts.name}
                     img={Desserts.img}
                     menu={Desserts.ingredients}
+                    price={Desserts.price}
+                    size={Desserts.size}
                     />
                     
             ))}
