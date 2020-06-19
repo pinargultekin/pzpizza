@@ -20,15 +20,15 @@ class Register extends Component {
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
-            firstName: 'selcuk',
-            lastName: 'ozcan',
-            email: 's.o@gmail',
-            phoneNumber: '12345',
-            password: '1234',
-            address: '58 kent',
-            city: 'Boston',
-            state: 'Ma',
-            zip: '02169'
+            firstName: '',
+            lastName: '',
+            email: '',
+            phoneNumber: '',
+            password: '',
+            address: '',
+            city: '',
+            state: '',
+            zip: ''
         }
 
     }
@@ -87,7 +87,9 @@ class Register extends Component {
             state: this.state.state,
             zip: this.state.zip
         }
-        console.log("this is user", user);
+
+        console.log(user);
+
 
         axios({
             method: "post",
@@ -105,10 +107,11 @@ class Register extends Component {
             },
             responseType: "json"
         }).then((response) => {
-            console.log("this isi response", response);
+            console.log("This is response", response);
         }, (error) => {
-            console.log("this is eroor", error);
+            console.log("Axios call back", error);
         });
+
 
     }
 
