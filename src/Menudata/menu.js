@@ -62,7 +62,7 @@ const menu = [
         itemImg: "https://image.freepik.com/free-photo/colorful-soda-drinks-macro-shot_53876-32239.jpg",
         itemMenu : ["Water", "Cocca Cola", "Cocca Cola Diet", "Cocca Cola Zero", "Sprite" , "Fanta"],
         itemType : [],
-        itemSize : ["20oz", "1 Liter", "2 Liter"],
+        itemSize : ["8oz", "2 Liter"],
         itemSauce : [],
         itemMeatTop : [],
         itemVegieTop : []
