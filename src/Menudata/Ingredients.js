@@ -52,7 +52,7 @@ const Pastas=[
     },
     {
         id:23,
-        name: "Create Your Own Pasta",
+        name: "Create Your Own",
         img: "../../images/cyopasta.webp",
         ingredients: [],
         price: ["9.45"],
@@ -201,6 +201,7 @@ const Drinks = [
         name: "Mtn Dew",
         // img: "https://cdn.shopify.com/s/files/1/0234/7341/products/1liter-cap-right_1024x1024.jpg?v=1583781171",
         img: "https://cdn.shopify.com/s/files/1/0269/2121/products/Glass_Bottle_Mountain_Dew.jpg?v=1568703424",
+        ingredients: [],
         size: ["330ml", "2 Liter"],
         price: ["1.95", "2.95"]
     },
@@ -208,6 +209,7 @@ const Drinks = [
         id:62,
         name: "Cocca Cola",
         img: "https://i5.walmartimages.com/asr/e03de7a8-c0a3-48ed-a107-6eec5ebddfaa_1.920a6b4429182a0c2a9291ff5824464f.jpeg",
+        ingredients: [],
         size: ["330ml", "2 Liter"],
         price: ["1.95", "2.95"]
     },
@@ -215,6 +217,7 @@ const Drinks = [
         id:63,
         name: "Cocca Cola Diet",
         img: "https://images-na.ssl-images-amazon.com/images/I/41kldHrc0kL.jpg",
+        ingredients: [],
         size: ["330ml", "2 Liter"],
         price: ["1.95", "2.95"]
     },
@@ -222,6 +225,7 @@ const Drinks = [
         id:64,
         name: "Cocca Cola Zero",
         img: "https://images-na.ssl-images-amazon.com/images/I/41naDwaDFyL.jpg",
+        ingredients: [],
         size: ["330ml", "2 Liter"],
         price: ["1.95", "2.95"]
     },
@@ -229,6 +233,7 @@ const Drinks = [
         id:65,
         name: "Sprite",
         img: "https://www.dollargeneral.com/media/catalog/product/cache/0729a8e318a86bbdd225c6c8aa5967a3/0/0/00049000047820_main.jpg",
+        ingredients: [],
         size: ["330ml", "2 Liter"],
         price: ["1.95", "2.95"]
     },
@@ -236,6 +241,7 @@ const Drinks = [
         id:66,
         name: "Fanta",
         img: "https://s3.envato.com/files/258098558/fanta.jpg",
+        ingredients: [],
         size: ["330ml", "2 Liter"],
         price: ["1.95", "2.95"]
     }

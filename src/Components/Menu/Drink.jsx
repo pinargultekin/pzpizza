@@ -19,7 +19,7 @@ class Drink extends Component{
                     key={Drinks.id}
                     title= {Drinks.name}
                     img={Drinks.img}
-                    menu={Drinks.size}
+                    menu={Drinks.ingredients}
                     price={Drinks.price}
                     size={Drinks.size}
                     />

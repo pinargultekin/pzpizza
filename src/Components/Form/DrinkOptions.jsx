@@ -4,7 +4,7 @@ import {Drinks} from "../../Menudata/Ingredients";
 
 function DrinkOptions(){
  
-   const[{id}, {size: [st, nd, rd, th]}] = Drinks;
+   const[{size: [st, nd, rd, th]}] = Drinks;
    console.log(st);
 
           return (     

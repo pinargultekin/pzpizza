@@ -1,5 +1,8 @@
 import React from "react";
-import {Modal, Button} from "react-bootstrap";
+import {Modal, Button, Tabs, Tab, Form} from "react-bootstrap";
+import MeatList from "../IngreList/MeatList"
+import NonMeatList from "../IngreList/NonMeatList"
+import SauceList from "../IngreList/SauceList"
 
 function EditOrder(props){
     
@@ -11,14 +14,21 @@ function EditOrder(props){
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Successful!
+            Edit Your Order
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>
-            Ingredients
-
-          </p>
+        <Tabs defaultActiveKey="MeatTops" transition={false} id="noanim-tab-example">
+  <Tab eventKey="MeatTops" title="Meat Toppings">
+  <MeatList />
+  </Tab>
+  <Tab eventKey="NonMeat" title="Non-Meat Toppings">
+    <NonMeatList />
+  </Tab>
+  <Tab eventKey="Sauce" title="Sauce">
+    <SauceList />
+  </Tab>
+</Tabs>
         </Modal.Body>
         <Modal.Footer>
           <Button className="edit-btn" onClick={props.onHide}>Close</Button>

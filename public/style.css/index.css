@@ -194,7 +194,7 @@ h2>span>a:hover{
  }
  .indv-card-pizza{
      margin: 50px 20px;
-     height: 25rem;
+     height: 26rem;
      width: 18rem;
  }
  .pz-card-title:hover{
@@ -206,17 +206,25 @@ font-weight: bolder;
      word-break: keep-all;
      border-bottom: rgba(95, 92, 102, 0.459) solid 1px;
      margin-bottom:1rem;
+     height: 62px;
  }
  .add-btn, .edit-btn{
-    /* float: right; */
+    float: left;
     display: block; 
     background-color: transparent;
     color:#FF5921;
     border-color: transparent;
     padding-top: 0px;
-    margin-top:1rem;
+    margin-bottom:1rem;
  }
-
+ 
+ #add-btn{
+    float:left;
+ }
+ #dec-btn{
+     float:left;
+     padding:0px
+ }
  .edit-btn:hover, .add-btn:hover{
     background-color: transparent;
     color: #FF5921;
@@ -316,3 +324,17 @@ font-weight: bolder;
     background-color: rgba(255, 88, 33, 0.151); 
     border:none;
  }
+/* MeatList */
+.ckList{
+    margin-top:1rem;
+    display: flex;
+    flex:1;
+    flex-direction: row; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.mtcheckbox{
+  height: 5rem;
+  width: 15rem;
+  float: left;
+}
