@@ -3,8 +3,8 @@ import {Form} from "react-bootstrap";
 import menu from "../../Menudata/menu";
 
 function NonMeatList(){
-    const[pizza,pasta,salad]=menu;
-    const{itemType:crust, itemSauce:pizzaSauce, itemMeatTop:pizzaMeatTop, itemVegieTop:pizzaNonMeatTop} = pizza;
+    const[pizza]=menu;
+    const{itemVegieTop:pizzaNonMeatTop} = pizza;
     // const{itemType:pastaType,itemSauce:pastaSauce, itemMeatTop:pastaMeatTop, itemVegieTop:pastaNonMeatTop} = pasta;
     // const{itemType:base, itemSauce:dressing, itemMeatTop:saladMeatTop, itemVegieTop:saladNonMeatTop} = salad;
     

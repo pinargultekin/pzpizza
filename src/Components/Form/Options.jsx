@@ -1,7 +1,7 @@
 import React from "react";
 import {Form} from "react-bootstrap"
-import {Pizzas, Drinks} from "../../Menudata/Ingredients";
-import menu from "../../Menudata/menu";
+import {Pizzas} from "../../Menudata/Ingredients";
+// import menu from "../../Menudata/menu";
 
 function Options(){
    const[{size: [first, second, third, forth]}] = Pizzas;
@@ -20,19 +20,7 @@ function Options(){
                 <option>{forth}</option>
                 </Form.Control>
                 </Form.Group>
-          )
-{/* 
-                {itemName === "Drink" && 
-                <Form.Group controlId="selectSize">
-                <Form.Control as="select">
-                <option>{st}</option>
-                <option>{nd}</option>
-                <option>{rd}</option>
-                <option>{th}</option>
-                </Form.Control>
-            </Form.Group>
-                }  */}
-                      
+          )                      
         }
     
     export default Options;

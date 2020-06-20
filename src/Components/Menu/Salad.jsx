@@ -5,12 +5,14 @@ import PizzaCards from "../Cards/PizzaCards"
 import {Salads} from "../../Menudata/Ingredients";
 import MiniNav from "../Navbar/miniNav";
 import Footer from "../Footer/Footer";
+import menu from "../../Menudata/menu";
 
 class Salad extends Component{
     render(){
+        const [{},{},salad]=menu;
         return <div className="main-cont">
             <Navigation />
-            <h1 className= "menu-header">SALAD</h1>
+    <h1 className= "menu-header">{salad.itemName}</h1>
             <MiniNav />
             <Col xs={9} className="categoryCard-pizza">  
             {Salads.map(Salads => (

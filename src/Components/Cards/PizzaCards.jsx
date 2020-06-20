@@ -19,7 +19,7 @@ function PizzaCards(props) {
   const size= props.size;
   const price= props.price;
   const ingre= props.menu;
-  console.log(ingre);
+  // console.log(ingre);
   function increment(){
     setCount(count + 1)
   };
@@ -36,7 +36,7 @@ function PizzaCards(props) {
          <Card.Img className="topCardImg" variant="top" style= {{width:'100%'}} src={props.img} />
          <Card.Body>
            <Card.Title className="pz-card-title">{props.title}</Card.Title>
-           <Card.Text>
+           
              <Row>
              <Col md={4}>
               <Button  id="add-btn" className="add-btn" data-tip="Add" onClick={() => setModalShow(true)}><MdAddShoppingCart/><ReactToolTip/></Button>
@@ -65,13 +65,13 @@ function PizzaCards(props) {
                 }
               </Col>
              </Row> 
-           </Card.Text>
+           
          </Card.Body>
        </Card>
 <EditOrder
 show={modalShow1}
 onHide={() => setModalShow1(false)}
-
+header={props.header}
 />
 <AddCart
 show={modalShow}

@@ -1,5 +1,5 @@
 import React from "react";
-import {Modal, Button, Tabs, Tab, Form} from "react-bootstrap";
+import {Modal, Button, Tabs, Tab} from "react-bootstrap";
 import MeatList from "../IngreList/MeatList"
 import NonMeatList from "../IngreList/NonMeatList"
 import SauceList from "../IngreList/SauceList"
@@ -20,7 +20,8 @@ function EditOrder(props){
         <Modal.Body>
         <Tabs defaultActiveKey="MeatTops" transition={false} id="noanim-tab-example">
   <Tab eventKey="MeatTops" title="Meat Toppings">
-  <MeatList />
+  <MeatList 
+  header={props.header}/>
   </Tab>
   <Tab eventKey="NonMeat" title="Non-Meat Toppings">
     <NonMeatList />
