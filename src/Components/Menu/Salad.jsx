@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {Col} from "react-bootstrap";
 import Navigation from "../Navbar/Nav";
-import PizzaCards from "../Cards/PizzaCards"
+import PastaCards from "../Cards/PastaCards"
 import {Salads} from "../../Menudata/Ingredients";
 import MiniNav from "../Navbar/miniNav";
 import Footer from "../Footer/Footer";
@@ -16,7 +16,7 @@ class Salad extends Component{
             <MiniNav />
             <Col xs={9} className="categoryCard-pizza">  
             {Salads.map(Salads => (
-                <PizzaCards 
+                <PastaCards 
                     key={Salads.id}
                     title= {Salads.name}
                     img={Salads.img}

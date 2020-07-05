@@ -249,7 +249,10 @@ font-weight: bolder;
      width:8rem;
      margin-left:1.5rem;
  }
-
+#sum{
+  float: right;  
+  width:4rem;
+}
  /* .ingr-title{
     padding: 1rem 1rem 0.5rem 1.5rem;
     padding-top:1rem;
