@@ -10,9 +10,7 @@ function Options(props){
    
   const count=props.count;
   const price=props.price;
-  const ssize=props.ssize;
-  const sizeLen = ssize.length;
-    const sizes = [
+  const sizes = [
       {value: st, label:first},
       {value: nd, label:second},
       {value: rd, label:third},
@@ -24,11 +22,6 @@ function Options(props){
     setSelectedValue(e.value);
   };
   const sum = (count * selectedValue).toFixed(2);
-  // if(sizeLen === 4){
-  //   document.getElementById("price-tag").innerHTML = `<span className="price-tag" id="price-tag">$` + sum + `</span>`;
-  // }else{
-  //   document.getElementById("price-tag").innerHTML = `<span className="price-tag" id="price-tag">$` + price[0] + `</span>`;
-  // }
   
           return  (
           <Row>

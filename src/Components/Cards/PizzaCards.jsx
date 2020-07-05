@@ -50,29 +50,20 @@ function PizzaCards(props) {
               <Button className="add-btn" onClick={increment}><TiPlusOutline/></Button>
               <Button id="dec-btn" className="add-btn" onClick={decrement}><TiMinusOutline/> {count} </Button>
               </Col>
-               {/* <Col md={4} id='price-tag'> */}
-              {/* <span className="price-tag" id="price-tag">$ </span> */}
-                {/* {
-                  size.length>0 &&
-                  <span className="price-tag" id="price-tag">$ </span> 
-                }
-                {
-                  size.length===0 &&
-                  <span className="price-tag" id="price-tag">$ {price[0]} </span> 
-                } */}
-              {/* </Col> */}
               <Col md={12}>
                 { 
                 size.length>0 && price.length ===4 
                 && <Options
                 count={count}
                 price={price}
-                ssize = {size}
                 /> 
                 }
                 {
                   size.length>0 && price.length === 2 
-                  && <DrinkOptions /> 
+                  && <DrinkOptions 
+                  count={count}
+                  price={price}
+                  /> 
                 }
               </Col>
              </Row> 
