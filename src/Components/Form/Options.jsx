@@ -1,25 +1,50 @@
-import React from "react";
-import {Form} from "react-bootstrap"
+import React, {useState} from "react";
+import Select from "react-select";
+import {Col, Row} from "react-bootstrap"
 import {Pizzas} from "../../Menudata/Ingredients";
 // import menu from "../../Menudata/menu";
 
-function Options(){
-   const[{size: [first, second, third, forth]}] = Pizzas;
-  //  const[{size: [st, nd, rd, th]}] = Drinks;
-  //  console.log(st);
-  // for(const {itemName} of menu){
-  //      console.log(itemName)      
-       
+function Options(props){
+   const[{size: [first, second, third, forth]},
+   {price:[st, nd, rd, th]} ] = Pizzas;
+   
+  const count=props.count;
+  const price=props.price;
+  const ssize=props.ssize;
+  const sizeLen = ssize.length;
+    const sizes = [
+      {value: st, label:first},
+      {value: nd, label:second},
+      {value: rd, label:third},
+      {value: th, label:forth},
+    ];
+  
+  const [selectedValue, setSelectedValue] = useState(price[0]);
+  const handleChange = e => {
+    setSelectedValue(e.value);
+  };
+  const sum = (count * selectedValue).toFixed(2);
+  // if(sizeLen === 4){
+  //   document.getElementById("price-tag").innerHTML = `<span className="price-tag" id="price-tag">$` + sum + `</span>`;
+  // }else{
+  //   document.getElementById("price-tag").innerHTML = `<span className="price-tag" id="price-tag">$` + price[0] + `</span>`;
+  // }
+  
           return  (
-            
-          <Form.Group controlId="selectSize">
-           <Form.Control as="select">
-                <option>{first}</option>
-                <option>{second}</option>
-                <option>{third}</option>
-                <option>{forth}</option>
-                </Form.Control>
-                </Form.Group>
+          <Row>
+            <Col md={6}>
+            <Select 
+            placeholder="Size"
+            value={sizes.find(obj => obj.value === selectedValue)}
+            options={sizes} 
+            onChange={handleChange}
+             />
+           </Col>
+           <Col md={6}>
+           <span className="price-tag" id="price-tag">$ {sum} </span>
+           </Col>
+           </Row>
+          
           )                      
         }
     

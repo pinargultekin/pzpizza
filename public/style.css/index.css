@@ -243,10 +243,13 @@ font-weight: bolder;
     box-shadow: none!important;
  }
  .price-tag{
+     border:none;
      border-bottom: rgba(95, 92, 102, 0.459) solid 1px;
-     padding-bottom:10px;
-     
+     /* padding-bottom:10px;   */
+     width:8rem;
+     margin-left:2rem;
  }
+
  /* .ingr-title{
     padding: 1rem 1rem 0.5rem 1.5rem;
     padding-top:1rem;
@@ -312,18 +315,14 @@ font-weight: bolder;
      float:left;
      margin-top:-.4rem;
  }
- /* #selectSize>option{
-     background-color: rgba(255, 88, 33, 0.151);
-     border:none;
- }
- #selectSize>option:focus{
-     background-color: rgba(255, 88, 33, 0.151);
-     border:none;
- } */
- .form-control option:hover{
-    background-color: rgba(255, 88, 33, 0.151); 
+.css-yk16xz-control{
     border:none;
- }
+    border-bottom:rgba(95, 92, 102, 0.459) solid 1px;
+    border-radius: 0px;
+    width:88%;
+    float:left;
+    margin-top:-.4rem;
+}
 /* MeatList */
 .ckList{
     margin-top:1rem;

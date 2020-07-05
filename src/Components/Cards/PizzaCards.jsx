@@ -15,20 +15,19 @@ function PizzaCards(props) {
 
   const [modalShow1, setModalShow1] = useState(false);
   const [modalShow, setModalShow] = useState(false);
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
   const size= props.size;
   const price= props.price;
   const ingre= props.menu;
-  // console.log(ingre);
+  
   function increment(){
     setCount(count + 1)
   };
   function decrement(){
-    if(count > 0){
+    if(count > 1){
       setCount(count - 1);
     }
   };
-
     return <div className="pizza-cont">
         <Row>        
             <Col md={3}>
@@ -51,16 +50,28 @@ function PizzaCards(props) {
               <Button className="add-btn" onClick={increment}><TiPlusOutline/></Button>
               <Button id="dec-btn" className="add-btn" onClick={decrement}><TiMinusOutline/> {count} </Button>
               </Col>
-              <Col md={6}>
-                <span className="price-tag">$ {props.price[0]}</span> 
-              </Col>
-              <Col md={6}>
-                { 
-                size.length>0 && price.length ===4 
-                && <Options /> 
+               {/* <Col md={4} id='price-tag'> */}
+              {/* <span className="price-tag" id="price-tag">$ </span> */}
+                {/* {
+                  size.length>0 &&
+                  <span className="price-tag" id="price-tag">$ </span> 
                 }
                 {
-                  size.length>0 && price.length===2 
+                  size.length===0 &&
+                  <span className="price-tag" id="price-tag">$ {price[0]} </span> 
+                } */}
+              {/* </Col> */}
+              <Col md={12}>
+                { 
+                size.length>0 && price.length ===4 
+                && <Options
+                count={count}
+                price={price}
+                ssize = {size}
+                /> 
+                }
+                {
+                  size.length>0 && price.length === 2 
                   && <DrinkOptions /> 
                 }
               </Col>
