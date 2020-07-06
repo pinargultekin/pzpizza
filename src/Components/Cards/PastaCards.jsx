@@ -7,21 +7,17 @@ import {TiMinusOutline} from "react-icons/ti";
 import ReactToolTip from "react-tooltip";
 import EditOrder from "../Modals/EditOrder";
 import AddCart from "../Modals/AddCart";
-import Options from "../Form/Options";
-import DrinkOptions from "../Form/DrinkOptions";
-// import menu from "../../Menudata/menu";
 
-function PizzaCards(props) {
+function PastaCards(props) {
 
   const [modalShow1, setModalShow1] = useState(false);
   const [modalShow, setModalShow] = useState(false);
   const [count, setCount] = useState(1);
   // const header= props.header;
-  const size= props.size;
+  const title = props.title;
   const price= props.price;
   const ingre= props.menu;
-  const title= props.title;
-  // console.log(header);
+  const sum = (count * price[0]).toFixed(2);
   function increment(){
     setCount(count + 1)
   };
@@ -53,20 +49,7 @@ function PizzaCards(props) {
               <Button id="dec-btn" className="add-btn" onClick={decrement}><TiMinusOutline/> {count} </Button>
               </Col>
               <Col md={12}>
-                { 
-                size.length>0 && price.length ===4 
-                && <Options
-                count={count}
-                price={price}
-                /> 
-                }
-                {
-                  size.length>0 && price.length === 2 
-                  && <DrinkOptions 
-                  count={count}
-                  price={price}
-                  /> 
-                }
+              <span className="price-tag" id="sum">$ {sum} </span>
               </Col>
              </Row> 
            
@@ -87,4 +70,4 @@ onHide={() => setModalShow(false)}
        </Row> 
              </div>
 }
-export default PizzaCards;
+export default PastaCards;

@@ -27,7 +27,7 @@ const Pizzas =[
         id:14,
         name: "Create Your Own",
         img: "../../images/cyo-pizza.jpg",
-        ingredients: [],
+        ingredients: [""],
         price: ["10.45", "12.45","14.45","16.45"],
         size: ['10"', '12"', '14"', '16"']
     }
@@ -54,7 +54,7 @@ const Pastas=[
         id:23,
         name: "Create Your Own",
         img: "../../images/cyopasta.webp",
-        ingredients: [],
+        ingredients: [""],
         price: ["9.45"],
         size: []
     }
@@ -88,7 +88,7 @@ const Salads=[
         id:34,
         name: "Create Your Own",
         img: "https://feelgoodfoodie.net/wp-content/uploads/2019/02/Mediterranean-Chopped-Salad-5.jpg",
-        ingredients: [],
+        ingredients: [""],
         price: ["7.45"],
         size: []
     }

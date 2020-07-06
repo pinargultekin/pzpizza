@@ -16,7 +16,7 @@ function AddCart(props){
         </Modal.Header>
         <Modal.Body>
           <p>
-            Your order `order name here` added to your cart! 
+          <b>{props.count} x {props.title}</b> added to your cart! 
           </p>
         </Modal.Body>
         <Modal.Footer>
