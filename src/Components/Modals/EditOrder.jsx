@@ -24,10 +24,12 @@ function EditOrder(props){
   header={props.header}/>
   </Tab>
   <Tab eventKey="NonMeat" title="Non-Meat Toppings">
-    <NonMeatList />
+    <NonMeatList 
+    header={props.header}/>
   </Tab>
   <Tab eventKey="Sauce" title="Sauce">
-    <SauceList />
+    <SauceList 
+    header={props.header}/>
   </Tab>
 </Tabs>
         </Modal.Body>

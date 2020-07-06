@@ -9,7 +9,7 @@ import menu from "../../Menudata/menu"
 class Pasta extends Component{
 
     render(){
-        const[{},pasta]=menu;
+        const[,pasta]=menu;
         return <div className="main-cont">
             <Navigation />
     <h1 className= "menu-header">{pasta.itemName}</h1>
@@ -18,6 +18,7 @@ class Pasta extends Component{
             {Pastas.map(Pastas => (
                 <PastaCards 
                     key={Pastas.id}
+                    header={pasta.itemName}
                     title= {Pastas.name}
                     img={Pastas.img}
                     menu={Pastas.ingredients}

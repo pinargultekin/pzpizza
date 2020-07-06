@@ -16,10 +16,12 @@ function PizzaCards(props) {
   const [modalShow1, setModalShow1] = useState(false);
   const [modalShow, setModalShow] = useState(false);
   const [count, setCount] = useState(1);
+  // const header= props.header;
   const size= props.size;
   const price= props.price;
   const ingre= props.menu;
-  
+  const title= props.title;
+  // console.log(header);
   function increment(){
     setCount(count + 1)
   };
@@ -34,7 +36,7 @@ function PizzaCards(props) {
        <Card className="indv-card-pizza">
          <Card.Img className="topCardImg" variant="top" style= {{width:'100%'}} src={props.img} />
          <Card.Body>
-           <Card.Title className="pz-card-title">{props.title}</Card.Title>
+           <Card.Title className="pz-card-title">{title}</Card.Title>
            
              <Row>
              <Col md={4}>
@@ -76,6 +78,8 @@ onHide={() => setModalShow1(false)}
 header={props.header}
 />
 <AddCart
+count={count}
+title={title}
 show={modalShow}
 onHide={() => setModalShow(false)}
 />

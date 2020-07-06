@@ -13,7 +13,8 @@ function PastaCards(props) {
   const [modalShow1, setModalShow1] = useState(false);
   const [modalShow, setModalShow] = useState(false);
   const [count, setCount] = useState(1);
-  
+  // const header= props.header;
+  const title = props.title;
   const price= props.price;
   const ingre= props.menu;
   const sum = (count * price[0]).toFixed(2);
@@ -31,7 +32,7 @@ function PastaCards(props) {
        <Card className="indv-card-pizza">
          <Card.Img className="topCardImg" variant="top" style= {{width:'100%'}} src={props.img} />
          <Card.Body>
-           <Card.Title className="pz-card-title">{props.title}</Card.Title>
+           <Card.Title className="pz-card-title">{title}</Card.Title>
            
              <Row>
              <Col md={4}>
@@ -60,6 +61,8 @@ onHide={() => setModalShow1(false)}
 header={props.header}
 />
 <AddCart
+count={count}
+title={title}
 show={modalShow}
 onHide={() => setModalShow(false)}
 />

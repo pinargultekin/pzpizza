@@ -340,3 +340,16 @@ font-weight: bolder;
   width: 15rem;
   float: left;
 }
+#noanim-tab-example-tab-NonMeat,
+#noanim-tab-example-tab-Sauce,
+#noanim-tab-example-tab-MeatTops{
+    color:#FF5921!important;
+    font-weight: bold;
+
+}
+#noanim-tab-example-tab-NonMeat:hover,
+#noanim-tab-example-tab-Sauce:hover,
+#noanim-tab-example-tab-MeatTops:hover{
+    
+    color:#9E2B04!important;
+}
