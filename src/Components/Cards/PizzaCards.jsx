@@ -76,6 +76,7 @@ function PizzaCards(props) {
 show={modalShow1}
 onHide={() => setModalShow1(false)}
 header={props.header}
+ingredients={props.menu}
 />
 <AddCart
 count={count}

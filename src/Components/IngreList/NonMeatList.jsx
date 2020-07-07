@@ -15,63 +15,63 @@ function NonMeatList(props){
         //! LATER UPDATE: use for loop
         header ==="Pizza" ?
         <Form.Group >
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt1} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt2} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt3} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt4} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt5} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt6} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt7} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt8} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt9} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt10} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt11} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt12} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt13} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt14} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={pzvt15} />
+          <Form.Check className="mtcheckbox" value={pzvt1} type="checkbox" label={pzvt1} />
+          <Form.Check className="mtcheckbox" value={pzvt2} type="checkbox" label={pzvt2} />
+          <Form.Check className="mtcheckbox" value={pzvt3} type="checkbox" label={pzvt3} />
+          <Form.Check className="mtcheckbox" value={pzvt4} type="checkbox" label={pzvt4} />
+          <Form.Check className="mtcheckbox" value={pzvt5} type="checkbox" label={pzvt5} />
+          <Form.Check className="mtcheckbox" value={pzvt6} type="checkbox" label={pzvt6} />
+          <Form.Check className="mtcheckbox" value={pzvt7} type="checkbox" label={pzvt7} />
+          <Form.Check className="mtcheckbox" value={pzvt8} type="checkbox" label={pzvt8} />
+          <Form.Check className="mtcheckbox" value={pzvt9} type="checkbox" label={pzvt9} />
+          <Form.Check className="mtcheckbox" value={pzvt10} type="checkbox" label={pzvt10} />
+          <Form.Check className="mtcheckbox" value={pzvt11} type="checkbox" label={pzvt11} />
+          <Form.Check className="mtcheckbox" value={pzvt12} type="checkbox" label={pzvt12} />
+          <Form.Check className="mtcheckbox" value={pzvt13} type="checkbox" label={pzvt13} />
+          <Form.Check className="mtcheckbox" value={pzvt14} type="checkbox" label={pzvt14} />
+          <Form.Check className="mtcheckbox" value={pzvt15} type="checkbox" label={pzvt15} />
         </Form.Group>
       : header ==="Pasta" ?
         <Form.Group >
-          <Form.Check className="mtcheckbox"  type="checkbox" label={psvt1} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={psvt2} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={psvt3} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={psvt4} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={psvt5} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={psvt6} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={psvt7} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={psvt8} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={psvt9} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={psvt10} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={psvt11} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={psvt12} />
+          <Form.Check className="mtcheckbox" value={psvt1} type="checkbox" label={psvt1} />
+          <Form.Check className="mtcheckbox" value={psvt2} type="checkbox" label={psvt2} />
+          <Form.Check className="mtcheckbox" value={psvt3} type="checkbox" label={psvt3} />
+          <Form.Check className="mtcheckbox" value={psvt4} type="checkbox" label={psvt4} />
+          <Form.Check className="mtcheckbox" value={psvt5} type="checkbox" label={psvt5} />
+          <Form.Check className="mtcheckbox" value={psvt6} type="checkbox" label={psvt6} />
+          <Form.Check className="mtcheckbox" value={psvt7} type="checkbox" label={psvt7} />
+          <Form.Check className="mtcheckbox" value={psvt8} type="checkbox" label={psvt8} />
+          <Form.Check className="mtcheckbox" value={psvt9} type="checkbox" label={psvt9} />
+          <Form.Check className="mtcheckbox" value={psvt10} type="checkbox" label={psvt10} />
+          <Form.Check className="mtcheckbox" value={psvt11} type="checkbox" label={psvt11} />
+          <Form.Check className="mtcheckbox" value={psvt12} type="checkbox" label={psvt12} />
         </Form.Group>
       :
         <Form.Group >
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt1} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt2} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt3} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt4} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt5} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt6} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt7} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt8} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt9} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt10} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt11} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt12} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt13} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt14} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt15} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt16} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt17} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt18} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt19} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt20} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt21} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt22} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt23} />
-          <Form.Check className="mtcheckbox"  type="checkbox" label={sdvt24} />
+          <Form.Check className="mtcheckbox" value={sdvt1} type="checkbox" label={sdvt1} />
+          <Form.Check className="mtcheckbox" value={sdvt2} type="checkbox" label={sdvt2} />
+          <Form.Check className="mtcheckbox" value={sdvt3} type="checkbox" label={sdvt3} />
+          <Form.Check className="mtcheckbox" value={sdvt4} type="checkbox" label={sdvt4} />
+          <Form.Check className="mtcheckbox" value={sdvt5} type="checkbox" label={sdvt5} />
+          <Form.Check className="mtcheckbox" value={sdvt6} type="checkbox" label={sdvt6} />
+          <Form.Check className="mtcheckbox" value={sdvt7} type="checkbox" label={sdvt7} />
+          <Form.Check className="mtcheckbox" value={sdvt8} type="checkbox" label={sdvt8} />
+          <Form.Check className="mtcheckbox" value={sdvt9} type="checkbox" label={sdvt9} />
+          <Form.Check className="mtcheckbox" value={sdvt10} type="checkbox" label={sdvt10} />
+          <Form.Check className="mtcheckbox" value={sdvt11} type="checkbox" label={sdvt11} />
+          <Form.Check className="mtcheckbox" value={sdvt12} type="checkbox" label={sdvt12} />
+          <Form.Check className="mtcheckbox" value={sdvt13} type="checkbox" label={sdvt13} />
+          <Form.Check className="mtcheckbox" value={sdvt14} type="checkbox" label={sdvt14} />
+          <Form.Check className="mtcheckbox" value={sdvt15} type="checkbox" label={sdvt15} />
+          <Form.Check className="mtcheckbox" value={sdvt16} type="checkbox" label={sdvt16} />
+          <Form.Check className="mtcheckbox" value={sdvt17} type="checkbox" label={sdvt17} />
+          <Form.Check className="mtcheckbox" value={sdvt18} type="checkbox" label={sdvt18} />
+          <Form.Check className="mtcheckbox" value={sdvt19} type="checkbox" label={sdvt19} />
+          <Form.Check className="mtcheckbox" value={sdvt20} type="checkbox" label={sdvt20} />
+          <Form.Check className="mtcheckbox" value={sdvt21} type="checkbox" label={sdvt21} />
+          <Form.Check className="mtcheckbox" value={sdvt22} type="checkbox" label={sdvt22} />
+          <Form.Check className="mtcheckbox" value={sdvt23} type="checkbox" label={sdvt23} />
+          <Form.Check className="mtcheckbox" value={sdvt24} type="checkbox" label={sdvt24} />
         </Form.Group>
       }      
         </Form>
