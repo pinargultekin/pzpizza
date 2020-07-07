@@ -21,15 +21,20 @@ function EditOrder(props){
         <Tabs defaultActiveKey="MeatTops" transition={false} id="noanim-tab-example">
   <Tab eventKey="MeatTops" title="Meat Toppings">
   <MeatList 
-  header={props.header}/>
+  header={props.header}
+  ingredients={props.ingredients}/>
   </Tab>
   <Tab eventKey="NonMeat" title="Non-Meat Toppings">
     <NonMeatList 
-    header={props.header}/>
+    header={props.header}
+    ingredients={props.ingredients}
+    />
   </Tab>
   <Tab eventKey="Sauce" title="Sauce">
     <SauceList 
-    header={props.header}/>
+    header={props.header}
+    ingredients={props.ingredients}
+    />
   </Tab>
 </Tabs>
         </Modal.Body>
