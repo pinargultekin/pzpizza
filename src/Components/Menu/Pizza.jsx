@@ -18,6 +18,7 @@ class Pizza extends Component{
             {Pizzas.map(Pizzas => (
                 <PizzaCards 
                     key={Pizzas.id}
+                    id={Pizzas.id}
                     header={pizza.itemName}
                     title= {Pizzas.name}
                     img={Pizzas.img}

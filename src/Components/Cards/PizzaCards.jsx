@@ -21,6 +21,7 @@ function PizzaCards(props) {
   const price= props.price;
   const ingre= props.menu;
   const title= props.title;
+  
   // console.log(header);
   function increment(){
     setCount(count + 1)

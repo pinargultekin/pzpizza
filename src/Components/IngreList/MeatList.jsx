@@ -27,20 +27,20 @@ function MeatList(props) {
         header === "Pizza" ?
         <Form.Group>
                 {pizzaMeatTop.map(item => {
-                return (<Form.Check checked={intersecPz1.includes(item)} className="mtcheckbox" value={item} type="checkbox" label={item} />)
+                return (<Form.Check key={item} checked={intersecPz1.includes(item)} className="mtcheckbox" value={item} type="checkbox" label={item} />)
                 })}
         </Form.Group>
         : 
         header === "Pasta" ?
         <Form.Group >
                 {pastaMeatTop.map(item => {
-                return (<Form.Check checked={intersecPs1.includes(item)} className="mtcheckbox" value={item} type="checkbox" label={item} />)
+                return (<Form.Check key={item} checked={intersecPs1.includes(item)} className="mtcheckbox" value={item} type="checkbox" label={item} />)
                 })}
         </Form.Group>
         :
         <Form.Group>
                 {saladMeatTop.map(item => {
-                return (<Form.Check checked={intersecSd1.includes(item)} className="mtcheckbox" value={item} type="checkbox" label={item} />)
+                return (<Form.Check key={item} checked={intersecSd1.includes(item)} className="mtcheckbox" value={item} type="checkbox" label={item} />)
                 })}
         </Form.Group>
       }
