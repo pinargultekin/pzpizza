@@ -1,6 +1,5 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-// import { Pizzas, Pastas, Salads } from "../../Menudata/Ingredients";
 import Menu from "../../Menudata/menu";
 
 function NonMeatList(props) {
@@ -17,7 +16,8 @@ function NonMeatList(props) {
  const[pastaVal, setPastaVal] = React.useState(intersecPs3);
  const[saladVal, setSaladVal] = React.useState(intersecSd3);
 
- function handleChange(e) {
+  //LATER UPDATE!! call the handle...Change function once!
+ function handlePizzaChange(e) {
   const newPizzaVal = e.target.value;
   if (pizzaVal.includes(newPizzaVal)) {
     setPizzaVal(pV => {
@@ -31,14 +31,44 @@ function NonMeatList(props) {
     })
   }
 }
-console.log(pizzaVal);
+// console.log(pizzaVal);
+ function handlePastaChange(e) {
+  const newPastaVal = e.target.value;
+  if (pastaVal.includes(newPastaVal)) {
+    setPastaVal(pV => {
+      return pV.filter((item, index) => {
+        return (item !== newPastaVal)
+      })
+    })
+  } else {
+    return setPastaVal(pV => {
+      return [...pV, newPastaVal]
+    })
+  }
+}
+// console.log(pastaVal);
+ function handleSaladChange(e) {
+  const newSaladVal = e.target.value;
+  if (saladVal.includes(newSaladVal)) {
+    setSaladVal(pV => {
+      return pV.filter((item, index) => {
+        return (item !== newSaladVal)
+      })
+    })
+  } else {
+    return setSaladVal(pV => {
+      return [...pV, newSaladVal]
+    })
+  }
+}
+// console.log(saladVal);
 
   return (<Form className="ckList">
     {
     header === "Pizza" ?
     <Form.Group>
       {pizzaVegTop.map((item,index) => { 
-      return (<Form.Check key={item} id={index} checked={pizzaVal.includes(item)} onChange={handleChange} className="mtcheckbox" value={item} type="checkbox" label={item} />)
+      return (<Form.Check key={item} id={index} checked={pizzaVal.includes(item)} onChange={handlePizzaChange} className="mtcheckbox" value={item} type="checkbox" label={item} />)
       })}
     
     </Form.Group>
@@ -46,13 +76,13 @@ console.log(pizzaVal);
     header === "Pasta" ?
     <Form.Group >
       {pastaVegTop.map(item => {
-        return (<Form.Check key={item} checked={intersecPs3.includes(item)} onChange={handleChange} className="mtcheckbox" value={item} type="checkbox" label={item} />)
+        return (<Form.Check key={item} checked={pastaVal.includes(item)} onChange={handlePastaChange} className="mtcheckbox" value={item} type="checkbox" label={item} />)
       })}
     </Form.Group>
     :
     <Form.Group>
       {saladVegTop.map(item => {
-      return (<Form.Check key={item} checked={intersecSd3.includes(item)} onChange={handleChange} className="mtcheckbox" value={item} type="checkbox" label={item} />)
+      return (<Form.Check key={item} checked={saladVal.includes(item)} onChange={handleSaladChange} className="mtcheckbox" value={item} type="checkbox" label={item} />)
       })}
     </Form.Group>
     } 
