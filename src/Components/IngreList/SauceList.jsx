@@ -69,20 +69,20 @@ function SauceList(props) {
     header === "Pizza" ?
     <Form.Group>
       {pizzaSauce.map(item => {
-      return (<Form.Check key={item} checked={intersecPz2.includes(item)} onChange={handlePizzaChange} className="mtcheckbox" value={item} type="checkbox" label={item} />)
+      return (<Form.Check key={item} checked={pizzaVal.includes(item)} onChange={handlePizzaChange} className="mtcheckbox" value={item} type="checkbox" label={item} />)
       })}
     </Form.Group>
     :
     header === "Pasta" ?
     <Form.Group >
         {pastaSauce.map(item => {
-        return (<Form.Check key={item} checked={intersecPs2.includes(item)} onChange={handlePastaChange} className="mtcheckbox" value={item} type="checkbox" label={item} />)
+        return (<Form.Check key={item} checked={pastaVal.includes(item)} onChange={handlePastaChange} className="mtcheckbox" value={item} type="checkbox" label={item} />)
         })}
     </Form.Group>
     :
     <Form.Group>
       {saladSauce.map(item => {
-        return (<Form.Check key={item} checked={intersecSd2.includes(item)} onChange={handleSaladChange} className="mtcheckbox" value={item} type="checkbox" label={item} />)
+        return (<Form.Check key={item} checked={saladVal.includes(item)} onChange={handleSaladChange} className="mtcheckbox" value={item} type="checkbox" label={item} />)
       })}
     </Form.Group>
     }
