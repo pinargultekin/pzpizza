@@ -38,7 +38,6 @@ users.post('/add', (req, res) => {
 
     User.findOne({
         email: req.body.email
-
     })
         .then(user => {
             if (!user) {
@@ -60,8 +59,7 @@ users.post('/add', (req, res) => {
             res.send('error: ' + err)
         })
 })
-console.log(".");
-console.log(".");
+
 users.post('/login', (req, res) => {
     User.findOne({
         email: req.body.email
