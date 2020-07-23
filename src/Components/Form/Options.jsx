@@ -25,7 +25,7 @@ function Options(props){
   
           return  (
           <Row>
-            <Col md={6}>
+            <Col md={6} id="size">
             <Select 
             placeholder="Size"
             value={sizes.find(obj => obj.value === selectedValue)}
@@ -33,7 +33,7 @@ function Options(props){
             onChange={handleChange}
              />
            </Col>
-           <Col md={6}>
+           <Col md={6} id="pz-sum">
            <span className="price-tag" id="price-tag">$ {sum} </span>
            </Col>
            </Row>

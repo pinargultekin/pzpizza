@@ -17,7 +17,7 @@ function MiniNav() {
     <Nav.Link className="navLink nav-link" href="/pizza"  data-tip="Pizza" to="/pizza" ><FaPizzaSlice/><ReactToolTip/></Nav.Link>
     <Nav.Link className="navLink nav-link" href="/pasta" data-tip="Pasta" to="/pasta"><GiBerriesBowl/><ReactToolTip/></Nav.Link>
     <Nav.Link className="navLink nav-link" href="/salad" data-tip="Salad" to="/salad"><FaLeaf/><ReactToolTip/></Nav.Link>
-    <Nav.Link className="navLink nav-link" href="/sides" data-tip="Side" to="/sides"><GiChickenLeg/><ReactToolTip/></Nav.Link>
+    <Nav.Link className="navLink nav-link" href="/side" data-tip="Side" to="/side"><GiChickenLeg/><ReactToolTip/></Nav.Link>
     <Nav.Link className="navLink nav-link" href="/dessert" data-tip="Dessert" to="/dessert"><FaCookieBite/><ReactToolTip/></Nav.Link>
     <Nav.Link className="navLink nav-link" href="/drink" data-tip="Drink" to="/drink"><MdLocalDrink/><ReactToolTip/></Nav.Link>
     </Navbar.Collapse>

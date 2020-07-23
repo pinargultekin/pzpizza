@@ -22,15 +22,18 @@
     gray = #3C3940;
 */
 
-/* Body */
+/* BODY */
+#root{
+    width:100%;
+}
 body{
     font-family: 'Montserrat', sans-serif;
 }
-/* Navbar style */
+
+/* NAVBAR */
 .logo{
     height:80px;
     width: 80px;
-    /* margin-left: 25rem; */
 }
 .navLink{
     font-size: 20px;
@@ -58,7 +61,7 @@ body{
 .justify-content-end{
     margin-right: 19%
 }
-/* Header Photo style */
+/* HEADER PHOTO */
 .headerPic{
      width: 60%;
      height: 400px;
@@ -66,16 +69,16 @@ body{
 }
 .headerp{
     border-bottom: #C43606 2px solid;
-    /* border-top: #C43606 2px solid; */
     margin-bottom:3rem;
     margin-top:6.65rem;
 }
-/* App style */
+
+/* APP */
 .main-Col{
     vertical-align: middle;
 }
 
-/* Cards style */
+/* CARDS */
 .cardsRow{
     margin: 5rem;
 }
@@ -131,7 +134,7 @@ body{
     padding-top: 8px;
 }
 
-/* Register Page*/
+/* REGISTER PAGE*/
 .register-cont, .Login-cont{
     width:40%;
     margin-top: 6%;
@@ -174,7 +177,7 @@ h2>span>a:hover{
     color: #5F5C66; 
     text-decoration: none;
 }
-/* Menu Page */
+/* MENU PAGE */
 .fullMenu{
     margin-top:10%;
 }
@@ -182,7 +185,7 @@ h2>span>a:hover{
     margin-top:10%;
     text-align: center;
 }
-/* Pizza Cards */
+/* PIZZA CARDS */
 
 .categoryCard-pizza{
     margin: 0 auto; 
@@ -225,47 +228,33 @@ font-weight: bolder;
      float:left;
      padding:0px
  }
- .edit-btn:hover, .add-btn:hover{
+.edit-btn:hover, .add-btn:hover{
     background-color: transparent;
     color: #FF5921;
     border-color: transparent;
  }
- .edit-btn:focus, .add-btn:focus{
+.edit-btn:focus, .add-btn:focus{
     background-color: transparent;
     color:#FF5921;
     border-color: transparent;
     box-shadow: none;
  }
- .edit-btn:active, .add-btn:active{
+.edit-btn:active, .add-btn:active{
     background-color: transparent!important;
     color:rgba(255, 88, 33, 0.63)!important;
     border-color: transparent!important;
     box-shadow: none!important;
  }
- .price-tag{
-     border:none;
-     border-bottom: rgba(95, 92, 102, 0.459) solid 1px;
-     /* padding-bottom:10px;   */
-     width:8rem;
-     margin-left:1.5rem;
+.price-tag{
+    border:none;
+    border-bottom: rgba(95, 92, 102, 0.459) solid 1px;
+    width:8rem;
+    margin-left:1.5rem;
  }
 #sum{
   float: right;  
   width:4rem;
 }
- /* .ingr-title{
-    padding: 1rem 1rem 0.5rem 1.5rem;
-    padding-top:1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: rgba(95, 92, 102, 0.459) solid 1px;
- } */
- /* .ingre-titles>.btn{
-     float: right;   
- } */
- /* .ingr-names{
-    padding:1rem;
-    text-align: justify;
- } */
 
  .miniNavBar{
  margin-left: 30%;
@@ -273,7 +262,9 @@ font-weight: bolder;
  .nav-link{
    margin-right:5%;  
  }
-/* Footer */
+
+
+/* FOOTER */
 .footer-p{
     color:white;
     font-size: 12px;
@@ -297,7 +288,7 @@ font-weight: bolder;
     margin-bottom:5px;
 }
 
-/* Modals */
+/* MODALS */
 #contained-modal-title-vcenter{
     color:#3C3940;
     font-weight: bolder;
@@ -309,7 +300,7 @@ font-weight: bolder;
 .modal-footer{
     border-top: none;
 }
- /* Options */
+ /* OPTIONS */
  #selectSize{
      border:none;
      border-bottom:rgba(95, 92, 102, 0.459) solid 1px;
@@ -326,7 +317,7 @@ font-weight: bolder;
     float:left;
     margin-top:-.4rem;
 }
-/* MeatList */
+/* MEATLIST */
 .ckList{
     margin-top:1rem;
     display: flex;
@@ -353,3 +344,88 @@ font-weight: bolder;
     
     color:#9E2B04!important;
 }
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 980px){
+.main-cont{
+    max-width: 980px;
+}
+.fullMenu{
+    margin-top:14%;
+}
+.menu-header{
+    margin-top:14%;
+}
+.miniNavBar{
+    margin-left: 23%;
+}
+.modal-dialog{
+    max-width: 760px;
+}
+.register-cont, .Login-cont{
+    margin-top:12%;
+    width:60%;
+}
+.justify-content-end{
+    margin-right:0;
+}
+.navbar-brand{
+    margin-left:10%;
+}
+.footer-p {
+margin-left:-1.5rem;
+}
+}
+@media screen and (max-width: 800px){
+.main-cont{
+    max-width: 800px;
+}
+.col-9{
+    max-width:90%;
+}
+.register-cont, .Login-cont{
+    margin-top:12%;
+    width:70%;
+}
+.modal-dialog{
+    max-width: 650px;
+}
+}
+@media screen and (max-width: 767px){
+.css-yk16xz-control{
+    width:47%!important;
+}
+#add-btn, #edit-btn, #ps-add-btn, #ps-edit-btn{
+    width:25%;
+}
+#sum{
+    margin-top:.5rem;
+    width: 25%;
+    margin-right:1rem;
+}
+#count, #ps-count{
+    width:45%;
+}
+#opts{
+    width: 90%;
+}
+#pz-sum, #d-sum{
+    width: 50%;
+    float:left;
+    margin-top:-2rem;
+    margin-left:8rem;
+}
+}
+/* @media screen and (max-width: 640px){
+
+}
+@media screen and (max-width: 450px){
+
+}
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 639px) 
+  and (-webkit-min-device-pixel-ratio: 2){
+
+  } */

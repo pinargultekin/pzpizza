@@ -36,7 +36,7 @@ const menu = [
     },
     {
         id : 4,
-        itemName : "Sides",
+        itemName : "Side",
         itemImg : "https://image.freepik.com/free-photo/side-view-fried-breaded-cheese-ball-cardboard-bag-wooden-table_140725-11942.jpg",
         itemMenu : ["Garlic Bread", "Bread Sticks", "Cheese Sticks", "Cheese Stuff Pocket", "Meaty Stuff Pocket", "Croquettes", "Mozzarella Stick", "Jalapeno Poppers"],
         itemType : [],

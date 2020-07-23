@@ -27,7 +27,7 @@ class App extends Component {
                 <Route exact path="/Pizza" component={Pizza} />
                 <Route exact path="/Pasta" component={Pasta} />
                 <Route exact path="/Salad" component={Salad} />
-                <Route exact path="/Sides" component={Side} />
+                <Route exact path="/Side" component={Side} />
                 <Route exact path="/Dessert" component={Dessert} />
                 <Route exact path="/Drink" component={Drink} />
             </div>

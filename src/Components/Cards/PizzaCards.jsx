@@ -33,27 +33,27 @@ function PizzaCards(props) {
   };
     return <div className="pizza-cont">
         <Row>        
-            <Col md={3}>
+            <Col md={3} id="title">
        <Card className="indv-card-pizza">
          <Card.Img className="topCardImg" variant="top" style= {{width:'100%'}} src={props.img} />
          <Card.Body>
            <Card.Title className="pz-card-title">{title}</Card.Title>
            
              <Row>
-             <Col md={4}>
+             <Col md={4} id="add-btn">
               <Button  id="add-btn" className="add-btn" data-tip="Add" onClick={() => setModalShow(true)}><MdAddShoppingCart/><ReactToolTip/></Button>
               </Col>
-              <Col md={3}>
+              <Col md={3} id="edit-btn">
                 {
                   ingre.length>0 &&
-<Button className="edit-btn" data-tip="Edit" onClick={() => setModalShow1(true)}><FiEdit3/><ReactToolTip/></Button>
+              <Button className="edit-btn" data-tip="Edit" onClick={() => setModalShow1(true)}><FiEdit3/><ReactToolTip/></Button>
                 }
               </Col>
-              <Col md={5}>
+              <Col md={5} id="count">
               <Button className="add-btn" onClick={increment}><TiPlusOutline/></Button>
               <Button id="dec-btn" className="add-btn" onClick={decrement}><TiMinusOutline/> {count} </Button>
               </Col>
-              <Col md={12}>
+              <Col md={12} id="opts">
                 { 
                 size.length>0 && price.length ===4 
                 && <Options

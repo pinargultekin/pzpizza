@@ -6,6 +6,7 @@ import SubTotal from '../Components/Cart/Subtotal/Subtotal';
 import OrderOnlineSaving from '../Components/Cart/OnlineOrderSaving/OnlineOrderSaving';
 import TaxesFees from '../Components/Cart/TaxAndFees/TaxAndFees';
 import EstimatedTotal from '../Components/Cart/EstimatedTotal/EstimatedTotal';
+import ItemDetails from '../Components/Cart/ItemDetails/ItemDetails';
 // import ItemDetails from './components/ItemDetails/ItemDetails';
 // import PromoCodeDiscount from './components/PromoCode/PromoCode';
 import '../Components/Cart/Cart.css'
