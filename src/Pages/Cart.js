@@ -29,7 +29,7 @@ class Cart extends Component {
   componentDidMount = () => {
     this.setState(
       { taxes: (this.state.total + this.state.onlineOrderSavings) * 0.0875 },
-      function() {
+      function () {
         this.setState({
           estimatedTotal:
             this.state.total + this.state.onlineOrderSavings + this.state.taxes
@@ -42,7 +42,7 @@ class Cart extends Component {
     if (this.props.promoCode === 'DISCOUNT') {
       this.setState(
         { estimatedTotal: this.state.estimatedTotal * 0.9 },
-        function() {
+        function () {
           this.setState({
             disablePromoButton: true
           });
@@ -61,12 +61,6 @@ class Cart extends Component {
           <TaxesFees taxes={this.state.taxes.toFixed(2)} />
           <hr />
           <EstimatedTotal price={this.state.estimatedTotal.toFixed(2)} />
-          {/* <ItemDetails price={this.state.estimatedTotal.toFixed(2)} />
-          <hr />
-          <PromoCodeDiscount
-            giveDiscount={() => this.giveDiscountHandler()}
-            isDisabled={this.state.disablePromoButton}
-          /> */}
         </Container>
       </div>
     );
