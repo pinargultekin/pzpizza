@@ -11,20 +11,24 @@ import EstimatedTotal from '../Components/Cart/EstimatedTotal/EstimatedTotal';
 import '../Components/Cart/Cart.css'
 // Import redux provider
 import { connect } from 'react-redux';
-import { handleChange } from '../actions/promoCodeActions';
+// import { handleChange } from '../actions/promoCodeActions';
+// import store from "../store"
 
 class Cart extends Component {
+
+
   constructor(props) {
     super(props);
 
     this.state = {
-      total: 50.0,
+      total: parseFloat(props.stateItem),
       taxes: 0,
-      onlineOrderSavings: -3.85,
+      onlineOrderSavings: 0,
       estimatedTotal: 0,
       disablePromoButton: false
     };
   }
+
 
   componentDidMount = () => {
     this.setState(
@@ -52,6 +56,7 @@ class Cart extends Component {
   };
 
   render() {
+    console.log("cart props", this.props);
     return (
       <div className="main-cont">
         <Navigation />
@@ -67,10 +72,10 @@ class Cart extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  promoCode: state.promoCode.value
-});
+const mapStateToProps = (state, ownProps) => {
+  return {
+    stateItem: state
+  }
+};
 
-export default connect(mapStateToProps, {
-  handleChange
-})(Cart);
+export default connect(mapStateToProps)(Cart);

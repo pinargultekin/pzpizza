@@ -9,10 +9,14 @@ import EditOrder from "../Modals/EditOrder";
 import AddCart from "../Modals/AddCart";
 import Options from "../Form/Options";
 import DrinkOptions from "../Form/DrinkOptions";
+// import { connect } from "react-redux"
+// import redux from "redux"
 
 // import menu from "../../Menudata/menu";
 
 function PizzaCards(props) {
+
+  // console.log("PizzaCard props", props);
 
   const [cartItems, setCartItems] = useState({
 
@@ -20,7 +24,7 @@ function PizzaCards(props) {
     price: '10.45',
 
   })
-  console.log("cart items", cartItems);
+  // console.log("cart items", cartItems);
 
 
   const [modalShow1, setModalShow1] = useState(false);
@@ -46,7 +50,11 @@ function PizzaCards(props) {
     setCartItems(item)
   }
 
-
+  function handleClick(e) {
+    e.preventDefault();
+    setModalShow(true);
+    // props.addToCard()
+  }
 
 
   return <div className="pizza-cont">
@@ -59,7 +67,7 @@ function PizzaCards(props) {
 
             <Row>
               <Col md={4}>
-                <Button id="add-btn" className="add-btn" data-tip="Add" onClick={() => setModalShow(true)}><MdAddShoppingCart /><ReactToolTip /></Button>
+                <Button id="add-btn" className="add-btn" data-tip="Add" onClick={handleClick}><MdAddShoppingCart /><ReactToolTip /></Button>
               </Col>
               <Col md={3}>
                 {
@@ -116,4 +124,26 @@ function PizzaCards(props) {
     </Row>
   </div>
 }
+
+
+// function mapDispatchToProps(dispatch, ownProps) {
+//   // console.log("ownProps:", ownProps);
+//   return {
+//     addToCard: () => {
+//       dispatch({
+//         type: "ADD_ITEM", items: {
+//           name: ownProps.menu,
+//           size: ownProps.size,
+//           price: ownProps.price,
+//           count: ownProps.count
+//         }
+//       })
+//     }
+//   }
+// }
+
+
+// export default connect(null, mapDispatchToProps)(PizzaCards);
+
+
 export default PizzaCards;
