@@ -9,13 +9,13 @@ function cartReducer(state = initState, action) {
     switch (action.type) {
         case "ADD_ITEM":
             console.log("ITEMS ARE ADDED");
-            console.log(action);
-            return {
 
+            return {
+                ...state,
                 price: action.price
             }
         default:
-            return { state };
+            return state;
     }
 }
 
