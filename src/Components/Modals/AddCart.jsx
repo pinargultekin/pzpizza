@@ -5,17 +5,17 @@ import { connect } from "react-redux"
 
 function AddCart(props) {
 
-  // console.log("AddCart Props", props);
+  console.log("AddCart Props", props);
 
-  // function handleClick(e) {
-  //   e.preventDefault();
-  //   props.addtocard()
+  function handleClick(e) {
+    e.preventDefault();
+    props.addtocard()
+    // props.addtocard((props.count * props.price))
 
-  // }
+  }
 
   return <Modal
-
-
+    {...props}
     size="md"
     aria-labelledby="contained-modal-title-vcenter"
     centered
@@ -34,7 +34,7 @@ function AddCart(props) {
 
     <Modal.Footer >
       <Button className="edit-btn" onClick={props.onHide}>Close</Button>
-      <Button className="edit-btn" href="/cart" onClick={props.addtocard((props.count * props.price))}>Go to Cart</Button>
+      <Button className="edit-btn" href="/cart" onClick={handleClick}>Go to Cart</Button>
     </Modal.Footer>
   </Modal>
 }
@@ -42,7 +42,7 @@ function AddCart(props) {
 
 function mapDispatchToProps(dispatch, props) {
   return {
-    addtocard: (res) => dispatch({ type: "ADD_ITEM", price: res })
+    addtocard: () => dispatch({ type: "ADD_ITEM", price: (props.count * props.price) })
   }
 
 }

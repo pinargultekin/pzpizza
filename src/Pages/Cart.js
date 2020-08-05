@@ -21,7 +21,7 @@ class Cart extends Component {
     super(props);
 
     this.state = {
-      total: parseFloat(props.stateItem),
+      total: parseFloat(props.stateItem.cartItem.price),
       taxes: 0,
       onlineOrderSavings: 0,
       estimatedTotal: 0,
