@@ -12,16 +12,16 @@ import '../Components/Cart/Cart.css'
 // Import redux provider
 import { connect } from 'react-redux';
 // import { handleChange } from '../actions/promoCodeActions';
-// import store from "../store"
+import { firestoreConnect } from "react-redux-firebase";
+import { compose } from "redux";
 
 class Cart extends Component {
-
 
   constructor(props) {
     super(props);
 
     this.state = {
-      total: parseFloat(props.stateItem.cartItem.price),
+      total: parseFloat(),
       taxes: 0,
       onlineOrderSavings: 0,
       estimatedTotal: 0,
@@ -72,10 +72,14 @@ class Cart extends Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
+  console.log(state);
   return {
-    stateItem: state
-  }
+    projects: state.firestore.ordered || state.project
+  };
 };
 
-export default connect(mapStateToProps)(Cart);
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([{ collection: "cartOrders" }])
+)(Cart);

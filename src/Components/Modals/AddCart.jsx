@@ -1,17 +1,21 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
 import { connect } from "react-redux"
+import addtocart from "../../reducers/actions/addtocart"
 
 
 function AddCart(props) {
 
-  console.log("AddCart Props", props);
+  const state = {
+    count: props.count,
+    size: props.size,
+    title: props.title,
+    totalPrice: (props.count * props.price)
+  }
 
   function handleClick(e) {
     e.preventDefault();
-    props.addtocard()
-    // props.addtocard((props.count * props.price))
-
+    props.addtocart(state)
   }
 
   return <Modal
@@ -23,42 +27,26 @@ function AddCart(props) {
     <Modal.Header closeButton
     >
       <Modal.Title id="contained-modal-title-vcenter">
-        Successful!
+        Hello!
           </Modal.Title>
     </Modal.Header>
     <Modal.Body>
       <p>
-        <b>count:{props.count} size:{props.size}  x   title:{props.title} price:{(props.count * props.price).toFixed(2)}</b> added to your cart!
-          </p>
+        <b>You would like to add {props.count} of {props.size} {props.title} with the price of {(props.count * props.price).toFixed(2)}</b>
+      </p>
     </Modal.Body>
 
     <Modal.Footer >
       <Button className="edit-btn" onClick={props.onHide}>Close</Button>
-      <Button className="edit-btn" href="/cart" onClick={handleClick}>Go to Cart</Button>
+      <Button className="edit-btn" href="/cart" onClick={handleClick}>Confirm</Button>
     </Modal.Footer>
   </Modal>
 }
 
-
-function mapDispatchToProps(dispatch, props) {
+const mapDispatchToProps = (dispatch) => {
   return {
-    addtocard: () => dispatch({ type: "ADD_ITEM", price: (props.count * props.price) })
-  }
-
-}
-
+    addtocart: (project) => dispatch(addtocart(project))
+  };
+};
 
 export default connect(null, mapDispatchToProps)(AddCart);
-
-// export default AddCart;
-
-
-
-// const addtocard = () => {
-//   dispatch({
-//     type: "ADD_ITEM", price: (props.price * props.count)
-//   })
-// }
-// return {
-//   addtocard
-// }
