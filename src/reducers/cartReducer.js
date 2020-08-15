@@ -1,22 +1,19 @@
 
 const initState = {
-    price: 35,
-
-
+    price: 35
 }
-function cartReducer(state = initState, action) {
-
+const cartReducer = (state = initState, action) => {
     switch (action.type) {
         case "ADD_ITEM":
-            console.log("ITEMS ARE ADDED");
-
-            return {
-                ...state,
-                price: action.price
-            }
+            console.log("create project success");
+            return state;
+        case "ADD_ITEM_ERROR":
+            console.log("create project error");
+            return state;
         default:
             return state;
     }
-}
+};
+
 
 export default cartReducer;

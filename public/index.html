@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link  rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-  crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css/index.css"/>
+  <link rel="stylesheet" href="style.css/index.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.ico">
   <!-- <link
   rel="stylesheet"
@@ -22,6 +22,27 @@
 
   <div id="root"></div>
   <script src="../src/index.js" type="text/jsx"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyD3K-JOfd1yjA2yG31oHzI6stmpg8_o2-U",
+      authDomain: "pzpizza-fce09.firebaseapp.com",
+      databaseURL: "https://pzpizza-fce09.firebaseio.com",
+      projectId: "pzpizza-fce09",
+      storageBucket: "pzpizza-fce09.appspot.com",
+      messagingSenderId: "899426270614",
+      appId: "1:899426270614:web:5dc220a3cc4697154531b7",
+      measurementId: "G-XQ7079SCD1"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 
-  </body>
+
+</body>
+
 </html>

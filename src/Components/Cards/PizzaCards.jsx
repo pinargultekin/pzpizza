@@ -119,6 +119,7 @@ function PizzaCards(props) {
           price={cartItems.price}
           show={modalShow}
           onHide={() => setModalShow(false)}
+
         />
       </Col>
     </Row>

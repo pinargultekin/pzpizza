@@ -4,6 +4,7 @@ import App from "./Components/App/App.jsx";
 import { Provider } from 'react-redux';
 import store from './store';
 
+
 store.subscribe(() => console.log("the current state", store.getState()));
 
 ReactDOM.render(
