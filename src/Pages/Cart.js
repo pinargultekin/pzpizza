@@ -20,8 +20,13 @@ class Cart extends Component {
   constructor(props) {
     super(props);
 
+    let tot = 0
+    for (var i = 0; i < 3; i++) {
+      tot = tot + i
+    };
+    console.log("item, 1", props.item[0]);
     this.state = {
-      total: parseFloat(),
+      total: parseFloat(tot),
       taxes: 0,
       onlineOrderSavings: 0,
       estimatedTotal: 0,
@@ -75,7 +80,7 @@ class Cart extends Component {
 const mapStateToProps = (state) => {
   console.log(state);
   return {
-    projects: state.firestore.ordered || state.project
+    item: state.firestore.ordered.cartOrders || state
   };
 };
 
